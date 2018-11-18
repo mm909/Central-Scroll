@@ -1,0 +1,34 @@
+.wrapper {
+  width: 100%;
+  background: #cbcbcb;
+  /* display: none; */
+}
+
+body {
+  background: #cbcbcb;
+  margin: 0px;
+}
+
+pre {
+  margin: 0px;
+}
+
+ol {
+  padding-left: 60px;
+}
+
+.startScreen {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.fl {
+  width: 40%;
+  float: left;
+}
+
+.fr {
+  width: 40%;
+  float: right;
+}
