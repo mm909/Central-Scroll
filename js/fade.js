@@ -1,14 +1,29 @@
 $(document).ready(function() {
-
   $(".hoverButton").hover(
   function() {
-    $("#scrollingButtonGroup").css("display", "block");
+    $('#scrollingButtonGroup').animate({
+      right: "10px"
+    }, 500);
+    $('.hoverButton').hide(500);
   }, function() {
-    $('#scrollingButtonGroup').delay(5000).hide(1000);
+  })
+
+  $("#scrollingButtonGroup").hover(
+  function() {
+  }, function() {
+    $('#scrollingButtonGroup').delay(10000).animate({
+      right: "-500px"
+    }, 2000);
+    $('.hoverButton').delay(10000).show(1000);
   })
 });
 
 function startFadeTimer(){
   $("#scrollingButtonGroup").css("display", "block");
-  $('#scrollingButtonGroup').delay(5000).hide(1000);
+  $(".hoverButton").css("display", "none");
+  $('#scrollingButtonGroup').delay(10000).animate({
+    right: "-500px"
+  }, 2000);
+  $('.hoverButton').delay(10000).show(1000);
+
 }
