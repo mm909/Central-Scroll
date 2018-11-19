@@ -42,6 +42,13 @@ function goText() {
   prettyPrint();
 }
 
+function backText(){
+  $(".wrapper").css("display", "none");
+
+  $(".startScreen").css("display", "block");
+
+}
+
 function popluateText() {
   $("#codeScroll").html($("#codeInput").val());
 }
