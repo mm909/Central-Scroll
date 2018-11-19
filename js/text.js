@@ -17,7 +17,7 @@ function setTextType(t,s) {
   $("#langButton2").html(textType)
   setPrettyPrintClass();
   if(s){
-    $("#codeScroll").html($("#codeInput").val())
+    $("#codeScroll").html(escape($("#codeInput").val()))
     $('.prettyprinted').removeClass('prettyprinted');
     prettyPrint();
   }
