@@ -1,3 +1,11 @@
+.hoverImage {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 50px;
+  width: 50px;
+}
+
 .hoverButton {
   position: fixed;
   top: 0px;
