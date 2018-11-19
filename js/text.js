@@ -40,7 +40,6 @@ function goText() {
   setPrettyPrintClass();
   $('.prettyprinted').removeClass('prettyprinted');
   prettyPrint();
-  startFadeTimer();
 }
 
 function backText(){

@@ -1,29 +1,23 @@
 $(document).ready(function() {
-  $(".hoverButton").hover(
+  $("#hideShow").hover(
   function() {
-    $('#scrollingButtonGroup').animate({
-      right: "10px"
-    }, 500);
-    $('.hoverButton').hide(500);
+    $("#hideShow").css("background-color", "#3f4650");
   }, function() {
-  })
-
-  $("#scrollingButtonGroup").hover(
-  function() {
-  }, function() {
-    $('#scrollingButtonGroup').delay(10000).animate({
-      right: "-500px"
-    }, 2000);
-    $('.hoverButton').delay(10000).show(1000);
+    $("#hideShow").css("background-color", "transparent");
   })
 });
 
-function startFadeTimer(){
-  $("#scrollingButtonGroup").css("display", "block");
-  $(".hoverButton").css("display", "none");
-  $('#scrollingButtonGroup').delay(10000).animate({
-    right: "-500px"
-  }, 2000);
-  $('.hoverButton').delay(10000).show(1000);
 
+
+let hideShowVar = "HIDE";
+function hideShow(){
+  if (hideShowVar == "HIDE") {
+    $("#hideShowButtons").css("display", "none");
+    $("#hideShow").html("Show");
+    hideShowVar = "SHOW";
+  } else {
+    $("#hideShowButtons").css("display", "");
+    $("#hideShow").html("Hide");
+    hideShowVar = "HIDE";
+  }
 }

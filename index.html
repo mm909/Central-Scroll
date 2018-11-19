@@ -72,12 +72,12 @@
     </div> -->
   </div>
   <div class="wrapper">
-    <div class="hoverButton">
-      <img class="hoverImage" src="images/arrow.png" alt="">
-    </div>
     <pre id="codeScroll" class="prettyprint linenums CodeBoxBuffer"></pre>
     <div id="scrollingButtonGroup">
       <div class="buttons float-right">
+        <button id="hideShow" type="button" onclick="hideShow()" class="btn btn-hideShow">Hide</button>
+        <span id="hideShowButtons">
+
       <div class="btn-group">
         <button id="langButton2" type="button" class="noMargin btn btn-info">JS</button>
         <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,6 +102,8 @@
       </div>
       <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Back</button>
     </div>
+
+  </span>
 
     </div>
 
