@@ -2,19 +2,26 @@ var maxScroll = 0;
 var currScroll = 0;
 
 function popluateCodeInput() {
-  $("#codeInput").val(defaultCode);
+  // $("#codeInput").val(defaultCode);
   $("#codeScroll").html($("#codeInput").val());
-  prettyPrint();
 }
 
 function go() {
+  if ($("#codeInput").val() == "") {
+    $("#codeInput").val(defaultCode);
+  }
+  $("#codeScroll").html($("#codeInput").val());
   $(".wrapper").css("display", "block");
   $(".startScreen").css("display", "none");
+  prettyPrint();
 }
 
-function clear() {
-  $("#codeInput").val(" ")
-  console.log("tet");
+function clearText() {
+  $("#codeInput").val("")
+}
+
+function resetText() {
+  $("#codeInput").val(defaultCode);
 }
 
 function pageScroll() {

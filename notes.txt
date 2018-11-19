@@ -1,7 +1,20 @@
 // Start - 10:00pm
 /*
  *
+ * Made a interface to either use default code or use custom code.
+ * See commit: https://github.com/mm909/autoScrollCode/commit/1301900eb3ffd1528045a12507c8088c2e3eb1ef
+ * Will resume shortly
  *
+ */
+// Finish - 10:30pm
+
+// Start - 10:45pm
+/*
+ *
+ * Cleaned up the styles a little bit.
+ * Added a "default" button.
+ * Removed the scroll bar when Central Scroll is active.
+ * Committing what I have now, working on a language selector.
  *
  */
 // Finish -
