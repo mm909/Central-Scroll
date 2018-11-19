@@ -32,6 +32,10 @@ ol {
   padding-left: 60px;
 }
 
+.noMargin {
+  margin: 0px !important;
+}
+
 .startScreen {
   width: 95%;
   margin: auto;
@@ -56,10 +60,12 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
 }
+
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
