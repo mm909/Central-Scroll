@@ -8,12 +8,19 @@ $(document).ready(function() {
 function setTextSpeed(s) {
   textSpeed = s;
   $("#speedButton").html(textSpeed);
+  $("#speedButton2").html(textSpeed);
 }
 
-function setTextType(t) {
+function setTextType(t,s) {
   textType = t;
   $("#langButton").html(textType)
+  $("#langButton2").html(textType)
   setPrettyPrintClass();
+  if(s){
+    $("#codeScroll").html($("#codeInput").val())
+    $('.prettyprinted').removeClass('prettyprinted');
+    prettyPrint();
+  }
 }
 
 function goText() {

@@ -1,3 +1,10 @@
+#scrollingButtonGroup {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+
+}
+
 .buttonGroup {
   margin-top: 10px;
   display: table;
