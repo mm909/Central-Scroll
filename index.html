@@ -9,12 +9,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script language="javascript" type="text/javascript" src="text.js"></script>
-  <script language="javascript" type="text/javascript" src="scroll.js"></script>
-  <script language="javascript" type="text/javascript" src="prettyprint.js"></script>
+  <script language="javascript" type="text/javascript" src="js/text.js"></script>
+  <script language="javascript" type="text/javascript" src="js/scroll.js"></script>
+  <script language="javascript" type="text/javascript" src="js/prettyprint.js"></script>
+  <script language="javascript" type="text/javascript" src="js/defaultCode.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="prettyprint.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/prettyprint.css">
 </head>
 
 <body>
@@ -24,12 +25,12 @@
       <div class="input-group-prepend">
         <span class="input-group-text">Custom Code -></span>
       </div>
-      <textarea id="codeInput" class="form-control" placeholder="Custom code here"></textarea>
+      <textarea id="codeInput" class="form-control" placeholder="Custom code here - (optional)"></textarea>
     </div>
     <div class="input-group buttonGroup">
+
       <button type="button" onclick="clearText()" class="btn btn-danger">Clear</button>
       <button type="button" onclick="resetText()" class="btn btn-success">Default</button>
-      <button type="button" onclick="goText()" class=" btn btn-primary float-right">Go!</button>
 
       <div class="btn-group">
         <button id="langButton" type="button" class="noMargin btn btn-info">JS</button>
@@ -54,6 +55,8 @@
           <a class="dropdown-item" onclick="setTextSpeed('Very Fast')" href="#">Very Fast</a>
         </div>
       </div>
+
+      <button type="button" onclick="goText()" class=" btn btn-primary float-right">Go!</button>
 
     </div>
   </div>

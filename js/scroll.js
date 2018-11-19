@@ -37,8 +37,4 @@ function pageScroll() {
   scrolldelay = setTimeout(pageScroll, tempDelay);
 }
 
-// Very Fast = 2  ,  5;
-// Fast =      1  ,  0;
-// Medium =    1  , 10;
-// Slow =      1  , 25;
-// Very Slow = 1  , 50;
+// EOF
