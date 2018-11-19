@@ -1,11 +1,12 @@
 .wrapper {
   width: 100%;
-  background: #cbcbcb;
-  /* display: none; */
+  background: #2f3640;
+  display: none;
+
 }
 
 body {
-  background: #cbcbcb;
+  background: #2f3640;
   margin: 0px;
 }
 
