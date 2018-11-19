@@ -40,13 +40,12 @@ function goText() {
   setPrettyPrintClass();
   $('.prettyprinted').removeClass('prettyprinted');
   prettyPrint();
+  startFadeTimer();
 }
 
 function backText(){
   $(".wrapper").css("display", "none");
-
   $(".startScreen").css("display", "block");
-
 }
 
 function popluateText() {
