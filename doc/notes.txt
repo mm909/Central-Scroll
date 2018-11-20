@@ -40,6 +40,12 @@
    *
    * Working on adding in the timer (for snack/leave time)
    * 11:53am Finished adding the timer in -> will test today at center
+   * See commit: https://github.com/mm909/Central-Scroll/commit/ddc8415f72eb92049190be764f13ee4c67a24b85
    * Working on adding a visual timer
+   * 12:26 Unable to add a visual timer...
+   * I think that this can be done but not right now,
+   * it might require building a custom timer
+   * Maybe we can make this a project to display on the board
+   * Cleaning and committing
    *
    */
