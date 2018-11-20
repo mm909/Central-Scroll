@@ -1,5 +1,5 @@
-// TOTAL TIME LOGED: 1H 45M
-// UNPAID: 1H 45M
+// TOTAL TIME LOGED: 2H 45M
+// UNPAID: 2H 45M
 
 // Start - 10:00pm
 /*
@@ -49,3 +49,5 @@
    * Cleaning and committing
    *
    */
+// Finish 11/20 12:30pm
+// Time - 1h
