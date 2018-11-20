@@ -34,3 +34,12 @@
  */
 // Finish - 12:00am
 // Time - 1H 15M
+
+// Start - 11/20/2018 11:30am
+  /*
+   *
+   * Working on adding in the timer (for snack/leave time)
+   * 11:53am Finished adding the timer in -> will test today at center
+   * Working on adding a visual timer
+   *
+   */
