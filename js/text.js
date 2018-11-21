@@ -56,6 +56,8 @@ function clearText() {
 }
 
 function resetText() {
+  console.time('loading')
+  $("#loading").css("display","block")
   if (textType == "JS") {
     $("#codeInput").val(defaultCodeJS);
   } else if (textType == "HTML") {
@@ -63,6 +65,8 @@ function resetText() {
   } else if (textType == "CSS") {
     $("#codeInput").val(defaultCodeCSS);
   }
+  console.timeEnd('loading')
+  $("#loading").css("display","none")
 }
 
 function setPrettyPrintClass() {
