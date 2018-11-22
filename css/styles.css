@@ -128,3 +128,31 @@ input[type="file"] {
   margin: 0px;
   margin-right: 10px;
 }
+
+
+.class-page-link {
+  float: right;
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: none
+}
+
+.gitbutton {
+  background-color: #3f4650;
+
+  border: 1px solid #222;
+  border-radius: 3px;
+  color:#fed03d;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 10px;
+  text-decoration: none !important;
+  transition: background .3s, color .3s
+}
+
+.gitbutton:hover {
+  background: #222;
+  color: #fff
+}
