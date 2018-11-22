@@ -1,11 +1,29 @@
 var maxScroll = 0;
 var currScroll = 0;
+let doScroll = true;
 
 $(document).ready(function() {
   maxScroll = document.body.scrollHeight - window.innerHeight;
   currScroll = $(document).scrollTop();
   pageScroll();
 });
+
+function stop() {
+  if(doScroll){
+    doScroll = false;
+    $("#stopButton").html("Go")
+    $('#stopButton').removeClass('btn-danger');
+    $('#stopButton').addClass('btn-success');
+  } else {
+    doScroll = true;
+    $("#stopButton").html("Stop")
+    $('#stopButton').removeClass('btn-success');
+    $('#stopButton').addClass('btn-danger');
+  }
+
+
+
+}
 
 function pageScroll() {
   currScroll = $(document).scrollTop();
@@ -33,6 +51,7 @@ function pageScroll() {
     tempScroll = 1;
     tempDelay = 50;
   }
+  if(doScroll)
   window.scrollBy(0, tempScroll);
   scrolldelay = setTimeout(pageScroll, tempDelay);
 }
