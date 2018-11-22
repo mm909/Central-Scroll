@@ -77,38 +77,40 @@
 
   </div>
   <div class="wrapper">
+    <a class="class-page-link gitbutton bottomGitLink" href="https://github.com/mm909/" rel="noreferrer noopener">GitHub</a>
+
     <pre id="codeScroll" class="prettyprint linenums CodeBoxBuffer"></pre>
     <div id="scrollingButtonGroup">
       <div class="buttons float-right">
         <button id="hideShow" type="button" onclick="hideShow()" class="btn btn-hideShow">Hide</button>
         <span id="hideShowButtons">
 
-      <div class="btn-group">
-        <button id="langButton2" type="button" class="noMargin btn btn-info">JS</button>
-        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" onclick="setTextType('JS',true)" href="#">JS</a>
-          <a class="dropdown-item" onclick="setTextType('HTML',true)" href="#">HTML</a>
-          <a class="dropdown-item" onclick="setTextType('CSS',true)" href="#">CSS</a>
+          <div class="btn-group">
+            <button id="langButton2" type="button" class="noMargin btn btn-info">JS</button>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick="setTextType('JS',true)" href="#">JS</a>
+              <a class="dropdown-item" onclick="setTextType('HTML',true)" href="#">HTML</a>
+              <a class="dropdown-item" onclick="setTextType('CSS',true)" href="#">CSS</a>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button id="speedButton2" type="button" class="noMargin btn btn-warning">Medium</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick="setTextSpeed('Very Slow')" href="#">Very Slow</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Slow')" href="#">Slow</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Medium')" href="#">Medium</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Fast')" href="#">Fast</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Very Fast')" href="#">Very Fast</a>
+            </div>
+          </div>
+          <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Back</button>
         </div>
-      </div>
-      <div class="btn-group">
-        <button id="speedButton2" type="button" class="noMargin btn btn-warning">Medium</button>
-        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" onclick="setTextSpeed('Very Slow')" href="#">Very Slow</a>
-          <a class="dropdown-item" onclick="setTextSpeed('Slow')" href="#">Slow</a>
-          <a class="dropdown-item" onclick="setTextSpeed('Medium')" href="#">Medium</a>
-          <a class="dropdown-item" onclick="setTextSpeed('Fast')" href="#">Fast</a>
-          <a class="dropdown-item" onclick="setTextSpeed('Very Fast')" href="#">Very Fast</a>
-        </div>
-      </div>
-      <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Back</button>
-    </div>
 
-  </span>
+      </span>
 
       </div>
 

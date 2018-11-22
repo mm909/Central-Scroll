@@ -5,6 +5,7 @@ $(document).ready(function() {
 });
 
 function getFile(event) {
+  console.time('file loading')
   const input = event.target
   if ('files' in input && input.files.length > 0) {
     placeFileContent(
@@ -33,4 +34,5 @@ function readFileContent(file) {
 
 function changeCustomUpload() {
   $("#input-lable").text(fileName);
+  console.timeEnd('file loading')
 }

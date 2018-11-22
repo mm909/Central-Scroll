@@ -1,3 +1,4 @@
+
 #loading {
   display: none;
 }
@@ -155,4 +156,11 @@ input[type="file"] {
 .gitbutton:hover {
   background: #222;
   color: #fff
+}
+
+.bottomGitLink {
+  position: fixed !important;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
 }
