@@ -571,22 +571,25 @@ textB {
 }
 /* EOF */`
 
+
+
 var defaultCodeHTML = `<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>First Website!</title>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css"></script>
+<head id="sql">
+  <title>PHP and MySQL</title>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
-  <script type="text/javascript" src="../../js/scrolling.js"></script>
-  <script type="text/javascript" src="../../js/progressbar.js"></script>
+  <script type="text/javascript" src="../../js/buildTOC.js"></script>
   <script type="text/javascript" src="../../js/toc.js"></script>
+  <script type="text/javascript" src="../../js/progressbar.js"></script>
   <script type="text/javascript" src="../../js/question.js"></script>
+  <script type="text/javascript" src="../../js/scrolling.js"></script>
   <script type="text/javascript" src="../../js/smoothscroll.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/prettyPrint.css">
   <link rel="stylesheet" href="../../css/styles.css">
@@ -596,12 +599,13 @@ var defaultCodeHTML = `<!DOCTYPE html>
 
   <div class="fixedHeaderContainer">
     <div class="wrapper">
-      <a href="https://portal.mycodecentral.com/my/" target="_self"><img src="../logo.png" alt="Code Central"></a>
+      <a href="https://portal.mycodecentral.com/my/" target="_self"><img src="../logo.png" alt="Code Central"></img></a>
     </div>
   </div>
 
   <div class="navPusher">
     <div class="docMainWrapper wrapper">
+
       <div class="container docsNavContainer">
         <nav class="toc">
           <div class="toggleNav">
@@ -609,63 +613,11 @@ var defaultCodeHTML = `<!DOCTYPE html>
               <div class="navGroups">
                 <div class="navGroup">
                   <a href="#top">
-                    <h3 class="navGroupCategoryTitle">WD 1</h3>
+                    <h3 class="navGroupCategoryTitle">WD 4</h3>
                   </a>
                   <ul id="toc">
                     <progress id="pb" value="0" max="100"></progress>
-                    <li class="navListItem"><a class="navItem" href="#learninggoals">
-                        <codeG>&lt;Learning Goals></codeG>
-                      </a></li>
-                    <li class="navListItem"><a class="navItem" href="#_HTML">
-                        <codeG>&lt;HTML&gt;</codeG>
-                      </a></li>
-                    <section id="TOC_HTML">
-                      <li class="navListItem"><a class="navItem" href="#gettingstartedhtml">1. Getting Started</a></li>
-                      <li class="navListItem"><a class="navItem" href="#files">2. Files</a></li>
-                      <li class="navListItem"><a class="navItem" href="#howtoedit">3. How to edit</a></li>
-                      <li class="navListItem"><a class="navItem" href="#helloworld">4. Hello World</a></li>
-                      <li class="navListItem"><a class="navItem" href="#title">5. Title <code>&lt;h1&gt;</code></a></li>
-                    </section>
-                    <li class="navListItem"><a class="navItem" href="#_BODY">
-                        <codeG>&lt;Body&gt;</codeG>
-                      </a></li>
-                    <section id="TOC_BODY">
-                      <li class="navListItem"><a class="navItem" href="#headers">1. Headers <code>&lt;h1&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#paragraphs">2. Paragraphs <code>&lt;p&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#bolditalicunderline">3. <strong>Bold</strong>, <i>Italic</i>, <u>Underline</u> </a></li>
-                      <li class="navListItem"><a class="navItem" href="#lists">4. Lists <code>&lt;ol&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#tables">5. Tables <code>&lt;table&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#images">6. Images <code>&lt;image&gt;</code></a></li>
-                    </section>
-                    <li class="navListItem"><a class="navItem" href="#_MULTIPAGES">
-                        <codeG>&lt;Multi Pages&gt;</codeG>
-                      </a></li>
-                    <section id="TOC_MULTIPAGES">
-                      <li class="navListItem"><a class="navItem" href="#links">1. Links <code>&lt;a&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#secondpage">2. Second Page <code>&lt;a&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#button">3. Button <code>&lt;button&gt;</code></a></li>
-                    </section>
-                    <li class="navListItem"><a class="navItem" href="#_CSS">
-                        <codeG>&lt;CSS&gt;</codeG>
-                      </a></li>
-                    <section id="TOC_CSS">
-                      <li class="navListItem"><a class="navItem" href="#gettingstartedcss">1. Getting Started</a></li>
-                      <li class="navListItem"><a class="navItem" href="#thebasics">2. The basics</a></li>
-                      <li class="navListItem"><a class="navItem" href="#connectingthetwo">3. Connecting the two <code>&lt;link&gt;</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#id">4. Id <code>#</code></a></li>
-                      <li class="navListItem"><a class="navItem" href="#class">5. Class <code>.</code></a></li>
-                    </section>
-                    <li class="navListItem"><a class="navItem" href="#_NAVBAR">
-                        <codeG>&lt;nav></codeG>
-                      </a></li>
-                    <section id=TOC_NAVBAR>
-                    </section>
-                    <li class="navListItem"><a class="navItem" href="#requirements">
-                        <codeB>Requirements</codeB>
-                      </a></li>
-                    <li class="navListItem"><a class="navItem" href="#challenges">
-                        <codeR>Challenges</codeR>
-                      </a></li>
+                    <div id="tocDynamic"></div>
                   </ul>
                 </div>
               </div>
@@ -680,84 +632,92 @@ var defaultCodeHTML = `<!DOCTYPE html>
 
             <header class="postHeader">
               <!-- <a class="edit-page-link button" href="https://www.GitHub.com/mm909" rel="noreferrer noopener">GitHub</a> -->
-              <h1 class="postHeaderTitle">Introduction to Web Development</h1>
+              <h1 class="postHeaderTitle">PHP and MySQL</h1>
             </header>
 
             <article id="mainContent">
               <p>
-                Welcome to your first web development project! In this project we will go through many aspects
-                of basic web development and how they work together to make a complete and pretty looking
-                website with many interactable features.
+                We're reaching the end game of Programming Pro! You've learned a lot in your time in this course. Now
+                we are reaching the final thing of web development! If you really enjoyed this, then the next step would
+                be to get on one of our web development courses for Javascript, PHP, Ruby on Rails, or whatever other
+                web development track looks good to you.
+              </p>
+              <p>
+                In this project you are going to use PHP and <code class="prettifySQL">MySQL</code> to allow users to login into your website and add
+                items to a list. Users who are logged in can see everything, while guests can only see the public posts
               </p>
 
-              <a id="learninggoals">
-                <h2>
-                  <codeG>Learning Goals</codeG>
-                </h2>
-              </a>
-              <ol>
-                <li>Good file structure for your website</li>
-                <ol>
-                  <li>index.html</li>
-                  <li>Resource Folders</li>
-                </ol>
-                <li>Starting an .html file</li>
-                <ol>
-                  <li>What all html pages should have</li>
-                  <li>Changing the title of your page</li>
-                </ol>
-                <li>Body elements for your website</li>
-                <ol>
-                  <li>Headers, paragraphs, tables, lists, text formatting, etc</li>
-                </ol>
-                <li>Multiple Pages</li>
-                <li>CSS Basics</li>
-                <ol>
-                  <li>Stylesheet.css</li>
-                  <li>Common element style</li>
-                </ol>
-                <li> Advanced CSS</li>
-                <ol>
-                  <li>CSS Class VS. ID</li>
-                </ol>
-                <li>Floating Top Menu</li>
-              </ol>
+              <div class="finalResultWapper">
+                <img src="images/final.PNG" alt=""></img>
+              </div>
 
-              <section id="section_HTML">
-                <a id="_HTML">
-                  <h2>
-                    <codeG>&lt;HTML></codeG>
-                  </h2>
-                </a>
+              <!-- SECTION DIVIDER -->
 
-                <a id="gettingstartedhtml">
-                  <h2>Getting Started</h2>
-                </a>
+              <section id="section_LG">
+                <a id="_LG"><h1><codeG>Learning Goals</codeG></h1></a>
+                <ol>
+                  <li>PHP Recap</li>
+                  <ol>
+                    <li>Creating index.php</li>
+                    <li>Setting up XAMPP</li>
+                  </ol>
+                  <li>Create base pages</li>
+                  <ol>
+                    <li>index.php</li>
+                    <li>register.php</li>
+                    <li>login.php</li>
+                  </ol>
+                  <li>MySQL Databasing</li>
+                  <ol>
+                    <li>What is MySQL?</li>
+                    <li>Creating a database and it’s tables</li>
+                  </ol>
+                  <li>Adding to database through PHP</li>
+                  <ol>
+                    <li>Users</li>
+                    <li>User's List</li>
+                  </ol>
+                  <li>Authentication</li>
+                  <ol>
+                    <li>Checking inputted password to password on database</li>
+                  </ol>
+                  <li>Home page for logged in users</li>
+                  <ol>
+                    <li>Home page for logged in users only (boot anyone off who isn't)</li>
+                  </ol>
+                  <li>Adding to user's list</li>
+                  <ol>
+                    <li>Add to list</li>
+                    <li>Display list on home page</li>
+                  </ol>
+                  <li>Editing data in the list</li>
+                  <li>Deleting Data</li>
+                  <li>Displaying "public" data</li>
+                </ol>
+              </section>
+
+              <section id="section_PHPRECAP">
+                <a id="_PHPRECAP"><h1><codeG>PHP Recap</codeG></h1></a>
                 <p>
-
-                  You may have done some <span style="color: #ed5565;">HTML</span> and <span style="color: #90EE90;">CSS</span> in CodeCombat, but this is to show you what it looks
-                  like when it’s not in a game.
-                  </br>
-                  </br>
-                  The first important thing to keep in mind, is that you have to have a project folder
-                  for your site.
+                  It’s probably been a little bit since your last PHP project, so we will help catch you back up to
+                  speed on setting up XAMPP
                 </p>
-                <h3 class="paraTitle">Creating website folder</h3>
-                <div class="paraSection">
+                <p>
+                  In order to run PHP code in XAMPP, you have to create your project folder in a very specific
+                  location.
+                </p>
+                <a id="0CREATINGINDEXPHP"><h2><code class="prettifySQL">Creating index.php</code></h2></a>
+                <div class="paraSection paraCenter">
                   <div class="para">
                     <div class="fl">
                       <p>
-                        Find where you would like to place your project folder.
-                        </br>
-                        We suggest that you do this in your ready share folder.
-                        </br>
-                        </br>
-                        Right Click to open the context menu -> Hover over “New” -> Press on “Folder”.
+                        This is the folder you must make friends with.
+                        Your project folder has to be in here.
                       </p>
                     </div>
                     <div class="fr">
                       <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/newfolder.png"></img>
+                        <img src="images/filepath.PNG" alt=""></img>
                       </div>
                     </div>
                   </div>
@@ -765,607 +725,1257 @@ var defaultCodeHTML = `<!DOCTYPE html>
                   <div class="para">
                     <div class="fl">
                       <p>
-                        Rename the folder to <textB> “<i>firstwebsite</i>”.</textB>
-                        </br>
-                        </br>
-                        This will be where you place all of your files for your website.
+                        Add a new project folder and create a new
+                        index file (remember that the extension is
+                        now .php).
                       </p>
                     </div>
                     <div class="fr">
                       <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/firstwebsite.png"></img>
+                        <img src="images/startFile.PNG" alt=""></img>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <a id="files">
-                  <h2>Files</h2>
-                </a>
-                <p>
-                  In any coding project, there is always that starting point where your
-                  project will go to first to run code. In websites, that’s called "<i>index</i>."
-                  The index file is the first page that should open if someone were to
-                  go to your site.
-                </p>
-                <h3 class="paraTitle">Creating <i>index.html</i> file</h3>
-                <div class="paraSection">
+                <br>
+                <a id="0SETTINGUPXAMPP"><h2> <code class="prettifySQL">Setting up XAMPP</code></h2></a>
+                <div class="paraSection paraCenter">
                   <div class="para">
                     <div class="fl">
                       <p>
-                        Inside your “<i>firstwebsite</i>” folder, right click and create a new text file.
+                        Open up windows and type "XAMPP" and
+                        select "XAMPP Control Panel"
                       </p>
                     </div>
                     <div class="fr">
                       <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/newtext.PNG"></img>
+                        <img src="images/startXampp.PNG" alt=""></img>
                       </div>
                     </div>
                   </div>
                   <br>
                   <div class="para">
-                    <div class="fl">
-                      <p>
-                        Rename the file to say <textB> “<i>index.html</i>”.</textB>
-                      </p>
+                    <p>
+                      You don't need to do much in here, just click
+                      on the "Start" button next to "Apache".
+                    </p>
+                    <div class="tutImageContainer">
+                      <img src="images/openXampp.PNG" alt=""></img>
                     </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/indexhtml.PNG"></img>
-                      </div>
+                  </div>
+                  <div class="para">
+                    <p>
+                      Now your server is running and you are ready
+                      to do some PHP coding!
+                    </p>
+                    <div class="tutImageContainer">
+                      <img src="images/startServerXampp.PNG" alt=""></img>
                     </div>
                   </div>
                 </div>
-
-                <a id="howtoedit">
-                  <h2>How to edit</h2>
-                </a>
-                <p>
-                  Awesome! If you double click on that file, you should see that opens
-                  a new page on your browser. You should also notice that page is blank…
-                  That is because we have to add code to it.
-                </p>
-                <h3 class="paraTitle">Coding your webpage</h3>
-                <div class="paraSection">
-                  <div class="para">
-                    <div class="fl">
-                      <p>
-                        Right click on your index file and select
-                        <br>
-                        “Open with -> Choose another app”.
-                      </p>
-                    </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/openwith.PNG"></img>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="para">
-                    <div class="fl">
-                      <p>
-                        Find <textR>“Sublime”</textR> and double click it.
-                        </br>
-                        </br>
-                        <img class="questionmark" src="../questionmark.jpg"></img>
-                        If you’re having trouble finding it, ask an
-                        instructor to help you (it won’t always show here).
-                      </p>
-                    </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/sublime.PNG"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <a id="helloworld">
-                  <h2>Hello World</h2>
-                </a>
-                <h3 class="paraTitle">First steps</h3>
+                <br>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html0" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result0" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
+                    <a class="nav-item nav-link active" id="index.php" data-toggle="tab" href="#-index.php0" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
                   </div>
                 </nav>
-                <br>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html0" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="tab-pane fade show active" id="-index.php0" role="tabpanel" aria-labelledby="index.php">
                     <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-    &lt;head&gt;
-      &lt;meta charset="utf-8"&gt;
-      &lt;title&gt;&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      Hello, World!
-    &lt;/body&gt;
-  &lt;/html&gt;</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="-result0" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <div class="resultBoxImageContainer">
-                        <img class="tutImage" src="examples/images/helloworld.PNG"></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p>
-                  The code in the HTML tab is your standard HTML structure. <br>
-                  Click on the "<code class="prettifyResult">Result</code>" tab to see what it should look like. <br>
-                  <code class="prettifyPurple">&lt;!DOCTYPE html></code> specifies you are using HTML5 (the latest version of HTML). <br>
-                  <code class="prettifyHTML">&lt;html>&lt;/html></code> code between here is HTML code (as opposed to CSS, Javascript, etc) <br>
-                  <code class="prettifyHTML">&lt;head>&lt;/head></code> code between these tags are your “meta” information <br>
-                  <code class="prettifyHTML">&lt;meta charset=”utf-8”></code> allows special characters not found on every keyboard. <br>
-                  <code class="prettifyHTML">&lt;body>&lt;/body></code> where your primary code goes. <br>
-                  When you were doing CodeCombat, you were always in the <code class="prettifyHTML">&lt;body></code> tag.
-                </p>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
 
-                <a id="title">
-                  <h2><code class="prettifyHTML">&lt;title&gt;</code></h2>
-                </a>
-                <p>
-                  If you notice on your new page, it says “index.html”.
-                  That is rather ugly and unprofessional, thankfully HTML has a quick fix for that.
-                </p>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html1" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result1" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-                  </div>
-                </nav>
-                <br>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html1" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    Hello, World!
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="-result1" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <div class="resultBoxImageContainer">
-                        <img class="tutImage" src="examples/images/helloworldtitle.PNG"></img>
-                      </div>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+  &lt;/body>
+&lt;/html>
+</pre>
                     </div>
                   </div>
                 </div>
                 <p>
-                  <code class="prettifyHTML">&lt;title>&lt;/title></code> is an element that defines what you see on the
-                  browser tab. Notice (on the results tab), that it now says “<codeB>My Website!</codeB>” instead of
-                  “index.html”
+                  In order to test your code, you have to type in "<strong>localhost/yourProjectFolder/index.php</strong>" on
+                  your browser. You can't just double click the file (if you do, you'll just see the PHP code).
                 </p>
               </section>
 
-              <section id="section_BODY">
-                <a id="_BODY">
-                  <h2>
-                    <codeG>Body</codeG>
-                  </h2>
-                </a>
-                <p>
-                  Now that we have gotten that out of the way, we are going
-                  to see the many different elements you can add to your website.
-                  <strong>Each example will be separate code</strong>​, so don’t worry that what is
-                  done in one section won’t appear in the next.
-                </p>
+              <!-- SECTION DIVIDER -->
 
-                <a id="headers">
-                  <h2>Headers <code class="prettifyHTML">&lt;h1&gt;</code></h2>
-                </a>
+              <section id="section_CBP">
+                <a id="_CBP"><h1><codeG>Create Base Pages</codeG></h1></a>
                 <p>
-                  Headers are useful in web development for your readers to know when
-                  you’ve moved from one category to the next. There are 6 levels of headers,
-                  as they get lower in the level, the smaller they get.
+                  Now that we have the dust off, time to jump into making this website! First thing that we have to
+                  is make our base pages for the home page, register page, and the login page.
                 </p>
-                <h3 class="paraTitle">Header Elements <code class="prettifyHTML">&lt;h1&gt;</code></h3>
+                <a id="0HPIPHP"><h2><code class="prettifySQL">Home page (index.php)</code></h2></a>
+                <p>
+                  Modify your index page to look like this.
+                  Remember that index​ is the first page anyone
+                  would go to if they typed in your website
+                  address, so this is considered your "home"
+                  page.
+                </p>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html2" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result2" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
+                    <a class="nav-item nav-link active" id="index.php" data-toggle="tab" href="#-index.php1" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
                   </div>
                 </nav>
-                <br>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html2" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="tab-pane fade show active" id="-index.php1" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>I am header 1, I am the biggest!&lt;/h1>
-    &lt;h2>I'm the second header, I'm a bit smaller&lt;/h2>
-    &lt;h3>I am number 3! Notice I'm even smaller?&lt;/h3>
-    &lt;h4>Why are we still shrinking???&lt;/h4>
-    &lt;h5>Can you even read this small???&lt;/h5>
-    &lt;h6>don't setp on me...&lt;/h6>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="-result2" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <h1>I am header 1, I am the biggest!</h1>
-                      <h2>I'm the second header, I'm a bit smaller</h2>
-                      <h3>I am number 3! Notice I'm even smaller?</h3>
-                      <h4>Why are we still shrinking???</h4>
-                      <h5>Can you even read this small???</h5>
-                      <h6>don't setp on me...</h6>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
                     </div>
                   </div>
                 </div>
-                <p>
-                  Remember that your code must be in between the
-                  <code class="prettifyHTML">&lt;body&gt;&lt;/body&gt;</code> tags.
-                  The best time to use header tags is when you want separate categories,
-                  you would follow a header tag with a paragraph tag (covered in next section).
-                </p>
-
-                <a id="paragraphs">
-                  <h2>Paragraphs <code class="prettifyHTML">&lt;p&gt;</code></h2>
-                </a>
-                <p>
-                  Paragraph tags are the most common tag that you will use,
-                  as they are a good standard size to write “paragraphs” of information.
-                </p>
-                <h3 class="paraTitle">Paragraph Element <code class="prettifyHTML">&lt;p&gt;</code></h3>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html3" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result3" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-                  </div>
-                </nav>
-                <br>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html3" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;h1>This will introduce the paragraph!&lt;/h1>
-    &lt;p>
-      Hello! I am a paragraph, and I will show you how paragraphs are
-      made to make information easy to read and enjoy!
-    &lt;/p>
-    &lt;p>
-      Notice that I added a section paragraph tag and it pushed me to a
-      new line?
-    &lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="-result3" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <h1>This will introduce the paragraph!</h1>
+                <a id="0RPRPHP"><h2><code class="prettifySQL">Registration page (register.php)</code></h2></a>
+                <p>The registration page is where you will allow users to create their new account with your site. </p>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
                       <p>
-                        Hello! I am a paragraph, and I will show you how paragraphs are
-                        made to make information easy to read and enjoy!
-                      </p>
-                      <p>
-                        Notice that I added a section paragraph tag and it pushed me to a
-                        new line?
+                        Create a new file called "register.php".
                       </p>
                     </div>
-                  </div>
-                </div>
-                <p>
-                  See how the header explains what is about to happen, and the paragraph gives more
-                  information about it? This is how you should structure your tags when writing websites
-                </p>
-
-                <a id="bolditalicunderline">
-                  <h2><strong>Bold</strong>, <i>Italic</i>, <u>Underline</u></h2>
-                </a>
-                <p>
-                  There are times when you want to add emphasis in your text.
-                  That can be bold,​ Italic, underline, and other things.
-                </p>
-                <p>
-                  There are many other things that you can do,
-                  but these are some of the very common ones.
-                </p>
-                <h3 class="paraTitle">Text Styles! <code class="prettifyHTML">&lt;b&gt;</code> <code class="prettifyHTML">&lt;i&gt;</code> <code class="prettifyHTML">&lt;u&gt;</code></h3>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html4" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result4" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-                  </div>
-                </nav>
-                <br>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html4" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>Text Formatting&lt;/h1>
-    &lt;p>
-      I want to show you how to &lt;b>bold&lt;/b>
-      words and how to &lt;i>italicise&lt;/i>
-      words, because they help you &lt;u>emphasis&lt;/u>
-      to words that we deem &lt;del>really&lt;/del>
-      incredibly &lt;b>important&lt;/b>!
-    &lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/reg.PNG" alt=""></img>
+                      </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="-result4" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
+                </div>
+                <br>
+                <p>Some of this should look familiar.</p>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="register.php" data-toggle="tab" href="#-register.php2" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php2" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-register.php2" role="tabpanel" aria-labelledby="register.php">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Registration Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php2" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <p>Remember <strong>action="post"</strong>? What does that mean?</p>
+                <p>The <strong>type="password"</strong> hides what is being typed.</p>
+                <a id="0LIPPHP"><h2><code class="prettifySQL">Login page (login.php)</code></h2></a>
+                <p>The login page's code is almost identical with the registration code just replace registering a user for the first time and logging in an existing user.</p>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
                       <p>
-                        I want to show you how to <strong>bold</strong>
-                        words and how to <i>italicise</i>
-                        words, because the help you <u>emphasis</u>
-                        to words that we deem <del>really</del>
-                        incredibly <strong>important</strong>!
+                        Create a new file called "login.php".
                       </p>
                     </div>
-                  </div>
-                </div>
-
-                <a id="lists">
-                  <h2>Lists <code class="prettifyHTML">&lt;ol&gt;</code></h2>
-                </a>
-                <p>
-                  We sometimes want to organize our thoughts in a nice list. An ordered list is when you have
-                  them numbered, while an unordered list is just a bunch of bullet points.
-                </p>
-                <h3 class="paraTitle">List Element <code class="prettifyHTML">&lt;ol&gt;</code></h3>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html5" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result5" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-                  </div>
-                </nav>
-                <br>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html5" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>Lists&lt;/h1>
-
-    &lt;h2>Animals&lt;/h2>
-    &lt;ul>
-      &lt;li>Dogs&lt;/li>
-      &lt;li>Cats&lt;/li>
-      &lt;li>Flamingos&lt;/li>
-      &lt;li>Hamsters&lt;/li>
-    &lt;/ul>
-
-    &lt;h2>Top five biggest programming languages (according to some website)&lt;/h2>
-    &lt;ol>
-      &lt;li>Javascript&lt;/li>
-      &lt;li>Python&lt;/li>
-      &lt;li>C#&lt;/li>
-      &lt;li>Go&lt;/li>
-      &lt;li>Android with Kotlin&lt;/li>
-    &lt;/ol>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="-result5" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <h1>Lists</h1>
-
-                      <h2>Animals</h2>
-                      <ul>
-                        <li>Dogs</li>
-                        <li>Cats</li>
-                        <li>Flamingos</li>
-                        <li>Hamsters</li>
-                      </ul>
-
-                      <h2>Top five biggest programming languages (according to some website)</h2>
-                      <ol>
-                        <li>Javascript</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>Go</li>
-                        <li>Android with Kotlin</li>
-                      </ol>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/login.PNG" alt=""></img>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <p>
-                  <code class="prettifyHTML"> &lt;ul>&lt;/ul></code> list items between these tags will be “unordered”, and they will begin with a bullet
-                  point.
-                </p>
-                <p>
-                  <code class="prettifyHTML">&lt;ol>&lt;/ol></code> list items between these tags will be “ordered”, and they will be numbered starting
-                  at 1.
-                </p>
-                <p>
-                  <code class="prettifyHTML">&lt;li>&lt;/li></code> list item tags that go in between the ordered or unordered list.
-                </p>
-
-                <a id="tables">
-                  <h2>Tables <code class="prettifyHTML">&lt;table&gt;</code></h2>
-                </a>
-                <p>
-                  This is a more outdated tag that is rarely used in practical use, however there are still occasions
-                  when they can be useful. Tables use headers, rows, and data to separate the information in a way
-                  that is clean and easy to read.
-                </p>
-                <h3 class="paraTitle">Table Element <code class="prettifyHTML">&lt;table&gt;</code></h3>
+                <br>
+                <p>Similar to the register.php code.</p>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html6" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result6" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-login.php3" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php3" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php3" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
                   </div>
                 </nav>
-                <br>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html6" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="tab-pane fade show active" id="-login.php3" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>A Table About Video Games&lt;/h1>
-    &lt;table style="width:100%">
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Login Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+    &lt;form action="checklogin.php" method="post">
+      Enter Username: &lt;input type="text" name="username" required="required">
+      Enter Password: &lt;input type="password" name="password" required="required">
+      &lt;input type="submit" value="Login"/>
+    &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+                </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php3" role="tabpanel" aria-labelledby="register.php">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Registration Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php3" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section Divider -->
+
+              <section id="section_MYSQLINTRO">
+                <a id="_MYSQLINTRO"><h1><codeG>MySQL Introduction</codeG></h1></a>
+                <a id="0WHATISSQ"><h2><code class="prettifySQL">What is SQL?</code></h2></a>
+                <p>
+                  With the basic pages set up and ready to go, time to bring in the big one! This is a powerful tool
+                  in the world of web development. Almost every website you know runs with some kind of SQL
+                  database
+                </p>
+                <p>
+                  What is a database? A database is rows and columns of information, and SQL (Structured Query
+                  Language) gives you the ability to access and manipulate that database. This is used for creating
+                  users on a website, storing items in an online shopping cart, creating more dynamic blogs, etc.
+                </p>
+                <a id="0MAKINGADATABASE"><h2><code class="prettifySQL">Making a database</code></h2></a>
+                <h3 class="paraTitle">Setting up our SQL database</h3>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Remember when you started
+                        your Apache server on
+                        XAMPP? Now you need to start
+                        your MySQL server.
+                      </p>
+                      <p>
+                        (SQL is the language, while
+                        MySQL is a database system
+                        that uses SQL)
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql1.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Now you're ready to create your
+                        database! Go to
+                        "localhost/phpmyadmin" and
+                        you should see this screen.
+                      </p>
+                      <p>
+                        PHPMyAdmin is an admin tool
+                        for setting up various aspects of
+                        your site (and in this case, our
+                        SQL database).
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql2.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Click on the "Databases" tab on
+                        the top and create a new
+                        database called "first_db"
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql3.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Add a new table called "users"
+                        with 3 columns.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql4.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        First column should be titled "id".
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql5.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        At the end of the column, tick
+                        the "A.I" box. This makes sure
+                        that the id is auto-incrementing.
+                        In databases, this is very
+                        important as it gives us a quick
+                        numerical value for every entry.
+                        It makes sorting through all the
+                        entries simpler and easier to
+                        write.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql6.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Create the columns for
+                        "username" and "password".
+                        Make sure that the type is
+                        "varchar", this means that they
+                        accept letters. Also make sure
+                        that the value is set to 50.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql7.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Press the "save" button to finish this table.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql8.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Click here to create another
+                        table for your database.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql9.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Create a new table titled "list"
+                      </p>
+                      <p>
+                        This is going to be the list that
+                        each user can make on their own
+                        individual accounts.
+                      </p>
+                      <p>
+                        We need 7 columns, notice how
+                        it already starts with 4? So we
+                        just have to add 3 more
+                        columns.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql10.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Press the "save" button to finish this table.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql8.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Fill in the seven columns with these values.
+                      </p>
+                      <p>
+                        Remember to check that the "id"
+                        is auto-incremented (A.I).
+                      </p>
+                      <p>
+                        Pay close attention to your type
+                        category, that you set it
+                        correctly.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql11.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Press the "save" button to finish this table.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/sql8.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section Divider -->
+
+              <section id="section_AUD">
+                <a id="_AUD"><h1><codeG>Adding User Data</codeG></h1></a>
+                <p>
+                  *Whew*, that was probably a bit stressful. But you did it! Now we can get back to the fun part of coding!
+                </p>
+                <a id="0IF"><h2><code class="prettifySQL">Input Form</code></h2></a>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="register.php" data-toggle="tab" href="#-register.php4" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#-login.php4" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php4" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-register.php4" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Registration Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    echo "Username entered is: &lt;b>" . $username . "&lt;/b>&lt;br>";
+    echo "Password entered is: &lt;b>" . $password . "&lt;/b>";
+  }
+?>
+              </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php4" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Login Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+    &lt;form action="checklogin.php" method="post">
+      Enter Username: &lt;input type="text" name="username" required="required">
+      Enter Password: &lt;input type="password" name="password" required="required">
+      &lt;input type="submit" value="Login"/>
+    &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+                </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php4" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  A lot going on here, the basics is that "<code class="prettifySQL">if($_SERVER['REQUEST_METHOD']</code>" is checking
+                  to see if the form has been submitted. </br> </br> Once it has, it creates a connection to the database you
+                  created. Then it runs your data through a function that converts the input to a string (this way
+                  hackers can't inject code into your site) and displays it.
+                </p>
+                <a id="0CU"><h2><code class="prettifySQL">Creating users</code></h2></a>
+                <p>
+                  The previous code will need to be rewritten slightly, but the following code will allow you to
+                  create users for your database.
+                </p>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="register.php" data-toggle="tab" href="#-register.php5" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#-login.php5" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php5" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-register.php5" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Registration Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+              </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php5" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Login Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+    &lt;form action="checklogin.php" method="post">
+      Enter Username: &lt;input type="text" name="username" required="required">
+      Enter Password: &lt;input type="password" name="password" required="required">
+      &lt;input type="submit" value="Login"/>
+    &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+                </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php5" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+
+                <p>
+                  A lot going on here:
+                </p>
+                <p>
+                  <code class="prettifySQL">mysqli_query()</code> is a mysql function that is searching for data in your database by a certain
+                  criteria. In this case… Everything from the user’s table. This is because we have to go through
+                  every username in the database to check to make sure that a username isn’t taken (otherwise
+                  we would be in trouble with users logging in).
+                </p>
+                <p>
+                  <code class="prettifySQL">mysqli_fetch_array()</code> uses the query from the previous function to actually get data from the
+                  database, and is then placed in a <code class="prettifySQL">while()</code> loop so that we can check each entry.
+                </p>
+                <p>
+                  <code class="prettifySQL">Print</code> is just another form of echo.
+                </p>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Going back to
+                        PHPMyAdmin and
+                        clicking on the "users"
+                        table, you should be able
+                        to see all created users
+                        that you make
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/CU1.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section Divider -->
+
+              <section id="section_AUTH">
+                <a id="_AUTH"><h1><codeG>Authenticating</codeG></h1></a>
+                <p>
+                  We have the ability to add users! Now we need the ability to log on as those users, for this we
+                  need to create a php file for authenticating the login information they use put in the login page
+                </p>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Create a new php file called "checklogin.php".
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/checklogin.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="checklogin.php" data-toggle="tab" href="#-checklogin.php6" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php6" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#-login.php6" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php6" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-checklogin.php6" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+  if(exists > 0){ // If there is a username
+    while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+      // Populate array with results
+      $table_users = $row['username'];
+      $table_password = $row['password'];
+    }
+
+    // Check array and see if matched username and password
+    if($username == $table_users && ($password == $table_password)) {
+      // Ser the session to the logged in user
+      $_SESSION['user'] = $username;
+      header("location: home.php");
+    } else {
+      Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+      Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+    }
+
+  } else {
+    Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php6" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Registration Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+              </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php6" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+    &lt;h2>Login Page&lt;/h2>
+    &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+    &lt;form action="checklogin.php" method="post">
+      Enter Username: &lt;input type="text" name="username" required="required">
+      Enter Password: &lt;input type="password" name="password" required="required">
+      &lt;input type="submit" value="Login"/>
+    &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php6" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <code class="prettifySQL">session_start()</code> Creating sessions is number
+                  one to having a user logged in. Essentially
+                  you're creating a new _SESSION variable
+                  that will hold any information of who just
+                  logged in on this computer (hence the reason
+                  you will be able to navigate to other pages
+                  while still logged in).
+                </p>
+                <p>
+                  <code class="prettifySQL">$_SESSION['user']</code> This is where you hold
+                  the information of who is logged in.
+                </p>
+                <p>
+                  Go to your
+                  "localhost/yourwebfolder/login.php" and try
+                  to login with whatever account you created. <strong> If
+                  it takes you to an error page then you did
+                  good! </strong> ​We haven't created the user's home
+                  page yet.
+                </p>
+              </section>
+
+              <!-- Section Divider -->
+
+              <section id="section_HP">
+                <a id="_HP"><h1><codeG>Home Page For Users</codeG></h1></a>
+                <p>
+                  If you notice, when you login you get a "404" error. This is because the code is directing you to a
+                  page that doesn't exist yet.
+                </p>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Create a new file called "home.php".
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/homefile.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-home.php7" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php7" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php7" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#-login.php7" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php7" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-home.php7" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
       &lt;tr>
-        &lt;th>Name&lt;/th>
-        &lt;th>Console&lt;/th>
-        &lt;th>Release&lt;/th>
-      &lt;/tr>
-      &lt;tr>
-        &lt;td>Fortnight&lt;/td>
-        &lt;td>PC&lt;/td>
-        &lt;td>2017&lt;/td>
-      &lt;/tr>
-      &lt;tr>
-        &lt;td>Undertale&lt;/td>
-        &lt;td>PC&lt;/td>
-        &lt;td>2015&lt;/td>
-      &lt;/tr>
-      &lt;tr>
-        &lt;td>Skyrim&lt;/td>
-        &lt;td>PS3&lt;/td>
-        &lt;td>2011&lt;/td>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
       &lt;/tr>
     &lt;/table>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+  &lt;/body>
+&lt;/html>
+</pre>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="-result6" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <h1>A Table About Video Games</h1>
-                      <table style="width:100%">
-                        <tr>
-                          <th>Name</th>
-                          <th>Console</th>
-                          <th>Release</th>
-                        </tr>
-                        <tr>
-                          <td>Fortnight</td>
-                          <td>PC</td>
-                          <td>2017</td>
-                        </tr>
-                        <tr>
-                          <td>Undertale</td>
-                          <td>PC</td>
-                          <td>2015</td>
-                        </tr>
-                        <tr>
-                          <td>Skyrim</td>
-                          <td>PS3</td>
-                          <td>2011</td>
-                        </tr>
-                      </table>
+                  <div class="tab-pane fade show" id="-checklogin.php7" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+session_start();
+
+// Create a connection with the database
+$con = mysqli_connect("localhost","root","","first_db");
+
+// Check connection
+if(mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+$username = mysqli_real_escape_string($con, $_POST['username'])
+$password = mysqli_real_escape_string($con, $_POST['password'])
+
+// Check if the username exists
+$query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+$exists = mysqli_num_rows($query);
+
+$table_users = "";
+$table_password = "";
+
+if(exists > 0){ // If there is a username
+  while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+    // Populate array with results
+    $table_users = $row['username'];
+    $table_password = $row['password'];
+  }
+
+  // Check array and see if matched username and password
+  if($username == $table_users && ($password == $table_password)) {
+    // Ser the session to the logged in user
+    $_SESSION['user'] = $username;
+    header("location: home.php");
+  } else {
+    Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+} else {
+  Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+  Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+}
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php7" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>PHP/SQL Register Page&lt;/title>
+&lt;/head>
+
+&lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+&lt;form action="register.php" method="post">
+  Enter Username: &lt;input type="text" name="username" required="required">
+  Enter Password: &lt;input type="password" name="password" required="required">
+  &lt;input type="submit" value="Register"/>
+&lt;/form>
+
+&lt;/body>
+&lt;/html>
+
+&lt;?php
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username']);
+  $password = mysqli_real_escape_string($con, $_POST['password']);
+
+  $bool = true;
+
+  $query = mysqli_query($con, "Select * from users");
+  while($row = mysqli_fetch_array($query)) {
+    $table_users = $row['username'];
+    if($username == $table_users) {
+      $bool = false;
+      Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+
+  if($bool) {
+    mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+    Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+    Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+  }
+}
+?>
+            </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php7" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>PHP/SQL Login Page&lt;/title>
+&lt;/head>
+
+&lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+&lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php7" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>PHP/SQL Login Page&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;?php
+    echo "&lt;p>Hello, World!&lt;/p>";
+  ?>
+  &lt;a href="login.php">Click here to login&lt;/a>
+  &lt;a href="register.php">Click here to register&lt;/a>
+&lt;/body>
+&lt;/html>
+</pre>
                     </div>
                   </div>
                 </div>
+                <p><i>
+                  You should be able to login and see this page.
+                  Notice how it even says hello to your
+                  username? Isn’t that cool???
+                </i></p>
+                <br>
                 <p>
-                  <code class="prettifyHTML">&lt;table>&lt;/table></code> creates your table the
-                  <code class="prettifyCSS">style=”width=100%”</code> is CSS code that you
-                  don’t need to worry about until later in this
-                  lesson.
+                  Most of this should be code you've seen before. The <code class="prettifySQL">session_start()</code> will be needed anywhere
+                  where you need to know the user who's logged in (in most sites that is everywhere. You
+                  always want to be checking when a user is logged in, otherwise users can get into places they
+                  shouldn't.
                 </p>
-                <p>
-                  <code class="prettifyHTML">&lt;tr>&lt;/tr></code> is the table row for your data.
-                </p>
-                <p>
-                  <code class="prettifyHTML">&lt;th>&lt;/th></code> is the table header, generally at the
-                  top of your table to show what columns will
-                  be in the table.
-                </p>
-                <p>
-                  <code class="prettifyHTML">&lt;td>&lt;/td></code> is table data for regular records.
-                </p>
-
-                <a id="images">
-                  <h2>Images <code class="prettifyHTML">&lt;image&gt;</code></h2>
-                </a>
-                <p>
-                  Just text in a website can look rather boring,
-                  so we’re going to spice it up by placing images into
-                  the page.
-                </p>
-                <h3 class="paraTitle">Image element <code class="prettifyHTML">&lt;image&gt;</code></h3>
-                <div class="paraSection">
+                <div class="paraSection paraCenter">
                   <div class="para">
                     <div class="fl">
                       <p>
-                        Go and search up whatever you’d like to add into your page.
+                        Create a new file called "logout.php", we
+                        need this to end the session and logout the
+                        user.
                       </p>
                     </div>
                     <div class="fr">
                       <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/imageone.PNG"></img>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="para">
-                    <div class="fl">
-                      <p>
-                        Right click on image
-                      </p>
-                    </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/imagetwo.PNG"></img>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="para">
-                    <div class="fl">
-                      <p>
-                        Create a new folder in your website folder
-                        called “images” and place your picture in
-                        there.
-                      </p>
-                      <p>
-                        You may need to rename it to something that
-                        makes more sense.
-                      </p>
-                    </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/renameimage.PNG"></img>
+                        <img src="images/logoutfile.PNG" alt=""></img>
                       </div>
                     </div>
                   </div>
@@ -1373,700 +1983,2102 @@ var defaultCodeHTML = `<!DOCTYPE html>
                 <br>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html7" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result7" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-logout.php8" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">logout.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-home.php8" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php8" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php8" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#-login.php8" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php8" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-logout.php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  session_destroy();
+  header("locaion:index.php");
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-home.php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
+      &lt;/tr>
+    &lt;/table>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-checklogin.php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+if(exists > 0){ // If there is a username
+  while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+    // Populate array with results
+    $table_users = $row['username'];
+    $table_password = $row['password'];
+  }
+
+  // Check array and see if matched username and password
+  if($username == $table_users && ($password == $table_password)) {
+    // Ser the session to the logged in user
+    $_SESSION['user'] = $username;
+    header("location: home.php");
+  } else {
+    Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+} else {
+  Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+  Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+}
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>PHP/SQL Register Page&lt;/title>
+&lt;/head>
+
+&lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+&lt;form action="register.php" method="post">
+  Enter Username: &lt;input type="text" name="username" required="required">
+  Enter Password: &lt;input type="password" name="password" required="required">
+  &lt;input type="submit" value="Register"/>
+&lt;/form>
+
+&lt;/body>
+&lt;/html>
+
+&lt;?php
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username']);
+  $password = mysqli_real_escape_string($con, $_POST['password']);
+
+  $bool = true;
+
+  $query = mysqli_query($con, "Select * from users");
+  while($row = mysqli_fetch_array($query)) {
+    $table_users = $row['username'];
+    if($username == $table_users) {
+      $bool = false;
+      Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+
+  if($bool) {
+    mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+    Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+    Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+  }
+}
+?>
+            </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>PHP/SQL Login Page&lt;/title>
+&lt;/head>
+
+&lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+&lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  &lt;title>PHP/SQL Login Page&lt;/title>
+&lt;/head>
+&lt;body>
+  &lt;?php
+    echo "&lt;p>Hello, World!&lt;/p>";
+  ?>
+  &lt;a href="login.php">Click here to login&lt;/a>
+  &lt;a href="register.php">Click here to register&lt;/a>
+&lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Pretty straightforward. This code opens the
+                  session with session_start() and then ends it
+                  with session_destroy(). The user is logged out
+                  and you can login with a new user. Go ahead
+                  and try it!
+                </p>
+              </section>
+
+              <!-- Section Divider -->
+
+              <section id="section_ATUS">
+                <a id="_ATUS"><h1><codeG>Adding To User's List</codeG></h1></a>
+                <p>
+                  We can create users, log them in, and see a page that says to them. Now let's add in one more
+                  thing. We are going to add in a list that has public and private items. Logged in users can see the
+                  private, while everyone can see the public.
+                </p>
+                <a id="0ATL"><h2> <code class="prettifySQL">Add to list</code></h2></a>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Create a new file called "add.php". This will
+                        be the script we run to add items.
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/addfile.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <p>This is just sample code for you to see how the addition code is going to work</p>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="add.php" data-toggle="tab" href="#-add.php9" role="tab" aria-controls="add.php" aria-selected="true"><code class="prettifySQL codetab">add.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-logout.php9" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">logout.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-home.php9" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php9" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php9" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-login.php9" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php9" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
                   </div>
                 </nav>
                 <br>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html7" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="tab-pane fade show active" id="-add.php9" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>Time to add an image&lt;/h1>
-    &lt;img src="images/walle.jpg">
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  if(!$_SESSION['user']) {
+    header("location:index.php");
+  }
+
+  $con = mysqli_connect("localhost","root","","first_db");
+  $details = mysqli_real_escape_string($con,$_POST['details']);
+  $time = strfrime("%X");
+  $date = strfrime("%B %d, %Y");
+
+  Print "$time - $date - $details";
+?>
+              </pre>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="-result7" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <h1>Time to add an image</h1>
-                      <img src="images/walle.jpg">
-                    </div>
+                  <div class="tab-pane fade show" id="-logout.php9" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  session_destroy();
+  header("locaion:index.php");
+?>
+</pre>
                     </div>
                   </div>
-                  <br>
+                  <div class="tab-pane fade show" id="-home.php9" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
+      &lt;/tr>
+    &lt;/table>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-checklogin.php9" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+  if(exists > 0){ // If there is a username
+    while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+      // Populate array with results
+      $table_users = $row['username'];
+      $table_password = $row['password'];
+    }
+
+    // Check array and see if matched username and password
+    if($username == $table_users && ($password == $table_password)) {
+      // Ser the session to the logged in user
+      $_SESSION['user'] = $username;
+      header("location: home.php");
+    } else {
+      Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+      Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+    }
+
+  } else {
+    Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php9" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+          </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php9" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php9" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <p>
+                  Alter the "add.php" to the following… This will create an SQL query to insert the values into
+                  your table. Notice the <code class="prettifySQL">if(isset($_POST['public']){}</code>, this is because we created the checkbox as
+                  an array in the form in your "home.php". Without this conditional, our loop would sometimes
+                  loop through an empty array if you don’t select the checkbox.
+                </p>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-add.php10" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">add.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-logout.php10" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">logout.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-home.php10" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php10" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php10" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-login.php10" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php10" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-add.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  if(!$_SESSION['user']) {
+    header("location:index.php");
+  }
+
+  // Only add if the request is secure
+  if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $details = mysqli_real_escape_string($con, $_POST['details']);
+    $time = strfrime("%X");
+    $date = strfrime("%B %d, %Y");
+    $decision = "no";
+
+    // Gets the data form the check box to see if it was checked
+    if(isset($_POST['public'])) {
+      $checkboxes = $_POST['public'];
+    } else {
+      $checkboxes = array();
+    }
+
+    foreach($checkboxes as $each_check) {
+      if($each_check != null) {
+        $decision = "yes"; // Yes this will be public
+      }
+    }
+
+    mysqli_query($con, "INSERT INTO list (details, date_posted, time_posted, public)
+                    VALUES ('$details', '$date', '$time', '$decision')");
+    header(location:home.php);
+  } else {
+    header(location:home.php);
+  }
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-logout.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  session_destroy();
+  header("locaion:index.php");
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-home.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
+      &lt;/tr>
+    &lt;/table>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-checklogin.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+  if(exists > 0){ // If there is a username
+    while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+      // Populate array with results
+      $table_users = $row['username'];
+      $table_password = $row['password'];
+    }
+
+    // Check array and see if matched username and password
+    if($username == $table_users && ($password == $table_password)) {
+      // Ser the session to the logged in user
+      $_SESSION['user'] = $username;
+      header("location: home.php");
+    } else {
+      Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+      Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+    }
+
+  } else {
+    Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+          </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php10" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <a id="0DLOHP"><h2> <code class="prettifySQL">Displaying list on home page</code></h2></a>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-home.php11" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-add.php11" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">add.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-logout.php11" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">logout.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php11" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php11" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-login.php11" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php11" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-home.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
+        &lt;th>Public Host&lt;/th>
+      &lt;/tr>
+
+      &lt;!-- User Data -->
+      &lt;?php
+        $con = mysqli_connect("localhost", "root", "", "first_db");
+        $query = mysqli_query($con, "Select * from users");
+        while($row = mysqli_fetch_array($query)) {
+          Print "&lt;tr>"
+          Print '&lt;td align="center">' . $row['id'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['details'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] . "&lt;/td>";
+          Print '&lt;td align="center">&lt;a href="edit.php">edit&lt;/a>&lt;/td>';
+          Print '&lt;td align="center">&lt;a href="delete.php">delete&lt;/a>&lt;/td>';
+          Print '&lt;td align="center">' . $row['public'] . "&lt;/td>";
+          Print "&lt;/tr>"
+        }
+      ?>
+    &lt;/table>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-add.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  if(!$_SESSION['user']) {
+    header("location:index.php");
+  }
+
+  // Only add if the request is secure
+  if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $details = mysqli_real_escape_string($con, $_POST['details']);
+    $time = strfrime("%X");
+    $date = strfrime("%B %d, %Y");
+    $decision = "no";
+
+    // Gets the data form the check box to see if it was checked
+    if(isset($_POST['public'])) {
+      $checkboxes = $_POST['public'];
+    } else {
+      $checkboxes = array();
+    }
+
+    foreach($checkboxes as $each_check) {
+      if($each_check != null) {
+        $decision = "yes"; // Yes this will be public
+      }
+    }
+
+    mysqli_query($con, "INSERT INTO list (details, date_posted, time_posted, public)
+                    VALUES ('$details', '$date', '$time', '$decision')");
+    header(location:home.php);
+  } else {
+    header(location:home.php);
+  }
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-logout.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  session_destroy();
+  header("locaion:index.php");
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-checklogin.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+  if(exists > 0){ // If there is a username
+    while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+      // Populate array with results
+      $table_users = $row['username'];
+      $table_password = $row['password'];
+    }
+
+    // Check array and see if matched username and password
+    if($username == $table_users && ($password == $table_password)) {
+      // Ser the session to the logged in user
+      $_SESSION['user'] = $username;
+      header("location: home.php");
+    } else {
+      Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+      Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+    }
+
+  } else {
+    Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+          </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php11" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  We altered the <code class="prettifySQL">&lt;table&lt;/table></code> tags in the home page to query and retrieve the values from the
+                  list table. We then looped through all the results and added them to the home page for logged
+                  in users to see.
+                </p>
+              </section>
+
+
+              <!-- section divider -->
+
+
+              <section id="section_ED">
+                <a id="_ED"><h1><codeG>Editing Data</codeG></h1></a>
+                <p>
+                  We can add data to the table, but what if you made a mistake? We are going to explore how to
+                  use GET (this entire time we’ve been using POST) to edit this data.
+                </p>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-php8" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-php8" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums:53 lang-php CodeBoxBuffer">
+Print '&lt;td align="center">&lt;a href="edit.php" id='. $row['id'] .'>edit&lt;/a>&lt;/td>';
+Print '&lt;td align="center">&lt;a href="delete.php" id='. $row['id'] .'>delete&lt;/a>&lt;/td>';
+</pre>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Edit the two table values for "edit" and "delete" in "home.php". Remember how get grabs
+                  values and passes them into the URL? Keep that in mind, it will become relevant soon.
+                </p>
+                <div class="paraSection paraCenter">
+                  <div class="para">
+                    <div class="fl">
+                      <p>
+                        Create a new file called "edit.php"
+                      </p>
+                    </div>
+                    <div class="fr">
+                      <div class="tutImageContainer">
+                        <img src="images/editfile.PNG" alt=""></img>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <p>
+                  The "edit.php" is very similar to the home
+                  page, and this is because it is supposed to!
+                </p>
+                <p>
+                  What this page is doing is acting as a way
+                  to edit the list that you were planning to
+                  edit, hence the reason we did a GET
+                  request. We are passing the value through
+                  the URL to be given to the edit page.
+                </p>
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-edit.php12" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">edit.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-home.php12" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-add.php12" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">add.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-logout.php12" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">logout.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php12" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php12" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-login.php12" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php12" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-edit.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer longCode">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;a href="home.php">Return to Home Page</a> &lt;br> &lt;br>
+
+    &lt;h2>Currently Selected&lt;/h2>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Public Host&lt;/th>
+      &lt;/tr>
+
+      &lt;?php
+        if(!empty($_GET['id'])){
+          $id = $_GET['id'];
+          $_SESSION['id'] = $id;
+          $id_exists = true;
+          $con = mysqli_connect("localhost", "root", "", "first_db");
+          $query = mysqli_query($con, "Select * from users");
+          $count = mysqli_num_rows($query);
+          if($count > 0){
+            while($row = mysqli_fetch_array($query)) {
+              Print "&lt;tr>"
+                Print '&lt;td align="center">' . $row['id'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['details'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['public'] . "&lt;/td>";
+              Print "&lt;/tr>"
+            }
+          } else {
+            $id_exists = false;
+          }
+        }
+      ?>
+    &lt;/table>
+    &lt;br>
+    <!-- User Data -->
+    &lt;?php
+      if($id_exists) {
+        Print
+        &lt;form action="add.php" method="post">
+        Add more to the list: &lt;input name="details" value="text"> &lt;br>
+        Public post? &lt;input type="checkbox" name="public[]" value="yes">
+        &lt;input type="submit" value="Add to list">
+        &lt;/form>
+        ;
+      } else {
+        Print '&lt;h2 align="center">There is no data to be edited.&lt;/h2>';
+      }
+    ?>
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $details = mysqli_real_escape_string($con, $_POST['details']);
+    $public = "no";
+    $id = $_SESSION['id'];
+    $time = strfrime("%X");
+    $date = strfrime("%B %d, %Y");
+
+    // Gets the data form the check box to see if it was checked
+    if(isset($_POST['public'])) {
+      $checkboxes = $_POST['public'];
+    } else {
+      $checkboxes = array();
+    }
+
+    foreach($checkboxes as $list) {
+      if($list != null) {
+        $public = "yes"; // Yes this will be public
+      }
+    }
+
+    mysqli_query($con, "UPDATE list SET details='$details', public='$public', date_edited='$date', time_edited='$time' WHERE id='$id'");
+    header(location:home.php);
+  }
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-home.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
+        &lt;th>Public Host&lt;/th>
+      &lt;/tr>
+
+      &lt;!-- User Data -->
+      &lt;?php
+        $con = mysqli_connect("localhost", "root", "", "first_db");
+        $query = mysqli_query($con, "Select * from users");
+        while($row = mysqli_fetch_array($query)) {
+          Print "&lt;tr>"
+          Print '&lt;td align="center">' . $row['id'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['details'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] . "&lt;/td>";
+          Print '&lt;td align="center">&lt;a href="edit.php">edit&lt;/a>&lt;/td>';
+          Print '&lt;td align="center">&lt;a href="delete.php">delete&lt;/a>&lt;/td>';
+          Print '&lt;td align="center">' . $row['public'] . "&lt;/td>";
+          Print "&lt;/tr>"
+        }
+      ?>
+    &lt;/table>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-add.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  if(!$_SESSION['user']) {
+    header("location:index.php");
+  }
+
+  // Only add if the request is secure
+  if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $details = mysqli_real_escape_string($con, $_POST['details']);
+    $time = strfrime("%X");
+    $date = strfrime("%B %d, %Y");
+    $decision = "no";
+
+    // Gets the data form the check box to see if it was checked
+    if(isset($_POST['public'])) {
+      $checkboxes = $_POST['public'];
+    } else {
+      $checkboxes = array();
+    }
+
+    foreach($checkboxes as $each_check) {
+      if($each_check != null) {
+        $decision = "yes"; // Yes this will be public
+      }
+    }
+
+    mysqli_query($con, "INSERT INTO list (details, date_posted, time_posted, public)
+                    VALUES ('$details', '$date', '$time', '$decision')");
+    header(location:home.php);
+  } else {
+    header(location:home.php);
+  }
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-logout.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  session_destroy();
+  header("locaion:index.php");
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-checklogin.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+  if(exists > 0){ // If there is a username
+    while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+      // Populate array with results
+      $table_users = $row['username'];
+      $table_password = $row['password'];
+    }
+
+    // Check array and see if matched username and password
+    if($username == $table_users && ($password == $table_password)) {
+      // Ser the session to the logged in user
+      $_SESSION['user'] = $username;
+      header("location: home.php");
+    } else {
+      Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+      Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+    }
+
+  } else {
+    Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+          </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php12" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                </div>
                   <p>
-                    <code class="prettifyHTML"> &lt;image></code> tag allows you to import images in your website. Notice that the src is equal to
-                    “images/walle.jpg”? This is because that the image is stored in a sub-folder of what is called
-                    the “root” folder.
+                    <code class="prettifySQL"> if($_SERVER["REQUEST_METHOD"] == "POST"</code>
+                    Is a conditional that is triggered when a
+                    form is submitting through POST (Not
+                    GET because we are directly accessing
+                    the database and that could cause security
+                    issues).
                   </p>
               </section>
-              <section id="section_MULTIPAGES">
-                <a id="_MULTIPAGES">
-                  <h2>
-                    <codeG>Multi Pages</codeG>
-                  </h2>
-                </a>
+
+
+              <!-- Section Divider -->
+
+
+              <section id="section_DD">
+                <a id="_DD"><h1><codeG>Deleting Data</codeG></h1></a>
                 <p>
-                  One page is all fine and dandy, but we want to be able to navigate to other pages on our site! We
-                  are going to explore two very common ways that users can move from one page to another.
+                  We have the ability to edit our data, but what if we just want to delete it? We are going to have
+                  the "delete" button be pressed and then have a javascript function to prompt the user to make
+                  sure they do in fact want to delete a record.
                 </p>
-                <a id="links">
-                  <h2>Links <code class="prettifyHTML">&lt;a&gt;</code></h2>
-                </a>
-                <p>To start things off, the single most basic way to navigate to another page is the anchor tag.</p>
-                <h3 class="paraTitle">Links to other sites <code class="prettifyHTML">&lt;a></code> </h3>
+                <br>
+                <p>
+                  Change your table data for
+                  "delete" and add the following
+                  script underneath your table.
+                </p>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html8" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result8" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-home.php13" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">home.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-edit.php13" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">edit.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-add.php13" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">add.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-logout.php13" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">logout.php</code></a>
+                    <a class="nav-item nav-link" id="checklogin.php" data-toggle="tab" href="#-checklogin.php13" role="tab" aria-controls="checklogin.php" aria-selected="true"><code class="prettifySQL codetab">checklogin.php</code></a>
+                    <a class="nav-item nav-link" id="register.php" data-toggle="tab" href="#-register.php13" role="tab" aria-controls="register.php" aria-selected="true"><code class="prettifySQL codetab">register.php</code></a>
+                    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#-login.php13" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">login.php</code></a>
+                    <a class="nav-item nav-link" id="index.php" data-toggle="tab" href="#-index.php13" role="tab" aria-controls="index.php" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
                   </div>
                 </nav>
-                <br>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-html8" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="tab-pane fade show active" id="-home.php13" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;h1>Come to our site&lt;/h1>
-  &lt;p>Click on &lt;a href="https://mycodecentral.com/">this&lt;/a>
-     word to go to our site&lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+  session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;form action="add.php" method="post">
+      Add more to the list: &lt;input name="details" value="text"> &lt;br>
+      Public post? &lt;input type="checkbox" name="public[]" value="yes">
+      &lt;input type="submit" value="Add to list">
+    &lt;/form>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Edit&lt;/th>
+        &lt;th>Delete&lt;/th>
+        &lt;th>Public Host&lt;/th>
+      &lt;/tr>
+
+      &lt;!-- User Data -->
+      &lt;?php
+        $con = mysqli_connect("localhost", "root", "", "first_db");
+        $query = mysqli_query($con, "Select * from users");
+        while($row = mysqli_fetch_array($query)) {
+          Print "&lt;tr>"
+          Print '&lt;td align="center">' . $row['id'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['details'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] . "&lt;/td>";
+          Print '&lt;td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] . "&lt;/td>";
+          Print '&lt;td align="center">&lt;a href="edit.php">edit&lt;/a>&lt;/td>';
+          Print '&lt;td align="center">&lt;a href="#" onclick="promptUser(' . $row['id'] . ')">delete&lt;/a>&lt;/td>';
+          Print '&lt;td align="center">' . $row['public'] . "&lt;/td>";
+          Print "&lt;/tr>"
+        }
+      ?>
+
+    &lt;/table>
+
+    &lt;script>
+      function promptUser(id){
+        var r = confirm("Are you sure you want to delete this record?")
+        if(r){
+          window.location.assign("delete.php?id=" + id);
+        }
+      }
+    &lt;/script>
+
+  &lt;/body>
+&lt;/html>
+</pre>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="-result8" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox">
-                      <h1>Come to our site</h1>
-                      <p>Click on <a href="https://mycodecentral.com/"><u>this</u></a>
-                        word to go to our site</p>
+                  <div class="tab-pane fade show" id="-edit.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer longCode">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Home Page&lt;/title>
+  &lt;/head>
+
+  &lt;?php
+    session_start();
+    // Check if logged in or not
+    if(!$_SESSION['user']) {
+      // If not logged in
+      header("location:index.php");
+    }
+    // Assign user value if logged in
+    $user = $_SESSION['user'];
+  ?>
+
+  &lt;body>
+
+    &lt;h2>Home Page&lt;/h2>
+    &lt;p>Hello &lt;?php Print "$user" ?>!&lt;/p>
+
+    &lt;a href="logout.php">Click here to logout</a> &lt;br> &lt;br>
+    &lt;a href="home.php">Return to Home Page</a> &lt;br> &lt;br>
+
+    &lt;h2>Currently Selected&lt;/h2>
+
+    &lt;h2 align="center">My List&lt;/h2>
+    &lt;table border="1px" width="100%">
+      &lt;tr>
+        &lt;th>ID&lt;/th>
+        &lt;th>Details&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Post Time&lt;/th>
+        &lt;th>Public Host&lt;/th>
+      &lt;/tr>
+
+      &lt;?php
+        if(!empty($_GET['id'])){
+          $id = $_GET['id'];
+          $_SESSION['id'] = $id;
+          $id_exists = true;
+          $con = mysqli_connect("localhost", "root", "", "first_db");
+          $query = mysqli_query($con, "Select * from users");
+          $count = mysqli_num_rows($query);
+          if($count > 0){
+            while($row = mysqli_fetch_array($query)) {
+              Print "&lt;tr>"
+                Print '&lt;td align="center">' . $row['id'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['details'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] . "&lt;/td>";
+                Print '&lt;td align="center">' . $row['public'] . "&lt;/td>";
+              Print "&lt;/tr>"
+            }
+          } else {
+            $id_exists = false;
+          }
+        }
+      ?>
+    &lt;/table>
+    &lt;br>
+    &lt;!-- User Data -->
+    &lt;?php
+      if($id_exists) {
+        Print
+        &lt;form action="add.php" method="post">
+        Add more to the list: &lt;input name="details" value="text"> &lt;br>
+        Public post? &lt;input type="checkbox" name="public[]" value="yes">
+        &lt;input type="submit" value="Add to list">
+        &lt;/form>
+        ;
+      } else {
+        Print '&lt;h2 align="center">There is no data to be edited.&lt;/h2>';
+      }
+    ?>
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $details = mysqli_real_escape_string($con, $_POST['details']);
+    $public = "no";
+    $id = $_SESSION['id'];
+    $time = strfrime("%X");
+    $date = strfrime("%B %d, %Y");
+
+    // Gets the data form the check box to see if it was checked
+    if(isset($_POST['public'])) {
+      $checkboxes = $_POST['public'];
+    } else {
+      $checkboxes = array();
+    }
+
+    foreach($checkboxes as $list) {
+      if($list != null) {
+        $public = "yes"; // Yes this will be public
+      }
+    }
+
+    mysqli_query($con, "UPDATE list SET details='$details', public='$public', date_edited='$date', time_edited='$time' WHERE id='$id'");
+    header(location:home.php);
+  }
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-add.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  if(!$_SESSION['user']) {
+    header("location:index.php");
+  }
+
+  // Only add if the request is secure
+  if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $details = mysqli_real_escape_string($con, $_POST['details']);
+    $time = strfrime("%X");
+    $date = strfrime("%B %d, %Y");
+    $decision = "no";
+
+    // Gets the data form the check box to see if it was checked
+    if(isset($_POST['public'])) {
+      $checkboxes = $_POST['public'];
+    } else {
+      $checkboxes = array();
+    }
+
+    foreach($checkboxes as $each_check) {
+      if($each_check != null) {
+        $decision = "yes"; // Yes this will be public
+      }
+    }
+
+    mysqli_query($con, "INSERT INTO list (details, date_posted, time_posted, public)
+                    VALUES ('$details', '$date', '$time', '$decision')");
+    header(location:home.php);
+  } else {
+    header(location:home.php);
+  }
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-logout.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  session_destroy();
+  header("locaion:index.php");
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-checklogin.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+
+  // Create a connection with the database
+  $con = mysqli_connect("localhost","root","","first_db");
+
+  // Check connection
+  if(mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+  $username = mysqli_real_escape_string($con, $_POST['username'])
+  $password = mysqli_real_escape_string($con, $_POST['password'])
+
+  // Check if the username exists
+  $query = mysqli_query($con, "SELECT * from users WHERE username = '$username'");
+  $exists = mysqli_num_rows($query);
+
+  $table_users = "";
+  $table_password = "";
+
+  if(exists > 0){ // If there is a username
+    while($row = mysqli_fetch_array($query)) { // Display all rows from Query
+      // Populate array with results
+      $table_users = $row['username'];
+      $table_password = $row['password'];
+    }
+
+    // Check array and see if matched username and password
+    if($username == $table_users && ($password == $table_password)) {
+      // Ser the session to the logged in user
+      $_SESSION['user'] = $username;
+      header("location: home.php");
+    } else {
+      Print '&lt;script>alert("Incorrect Password!");&lt;/script>'
+      Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+    }
+
+  } else {
+    Print '&lt;script>alert("Incorrect Username!");&lt;/script>'
+    Print '&lt;script>window.location.assign("login.php")&lt;/script>'
+  }
+
+?>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-register.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Register Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Registration Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="register.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Register"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+
+&lt;?php
+  if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    // Create a connection with the database
+    $con = mysqli_connect("localhost","root","","first_db");
+
+    // Check connection
+    if(mysqli_connect_errno()) {
+      echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+
+    $username = mysqli_real_escape_string($con, $_POST['username']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $bool = true;
+
+    $query = mysqli_query($con, "Select * from users");
+    while($row = mysqli_fetch_array($query)) {
+      $table_users = $row['username'];
+      if($username == $table_users) {
+        $bool = false;
+        Print '&lt;script>alert("Username has been taken!");&lt;/script>';
+        Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+      }
+    }
+
+    if($bool) {
+      mysqli_query($con, "INSERT INTO users(username,password) VALUES ('$username', '$password')");
+      Print '&lt;script>alert("Successfully Registered!");&lt;/script>';
+      Print '&lt;script>window.location.assign("register.php")&lt;/script>';
+    }
+  }
+?>
+          </pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-login.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+
+  &lt;body>
+  &lt;h2>Login Page&lt;/h2>
+  &lt;a href="index.php">Click here to go back&lt;/a> &lt;br> &lt;br>
+
+  &lt;form action="checklogin.php" method="post">
+    Enter Username: &lt;input type="text" name="username" required="required">
+    Enter Password: &lt;input type="password" name="password" required="required">
+    &lt;input type="submit" value="Login"/>
+  &lt;/form>
+
+  &lt;/body>
+&lt;/html>
+</pre>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="-index.php13" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>PHP/SQL Login Page&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+&lt;/html>
+</pre>
                     </div>
                   </div>
                 </div>
-                <p>Clicking on the link between the <code class="prettifyHTML"> &lt;a>&lt;/a></code> tags will send your user to another page.</p>
-
-                <a id="secondpage">
-                  <h2>Second Page <code class="prettifyHTML">&lt;a&gt;</code></h2>
-                </a>
                 <p>
-                  Knowing how to move to other websites is all well and good, however, most web developers will
-                  have links that will lead to other pages on their own site
+                  Notice how the URL you are
+                  directed to is "delete.php?id=id",
+                  is that a GET or POST method?
                 </p>
-                <h3 class="paraTitle">Links to other pages on your own site <code class="prettifyHTML">&lt;a></code> </h3>
-                <div class="paraSection">
+                <div class="paraSection paraCenter">
                   <div class="para">
                     <div class="fl">
                       <p>
-                        Go to your project folder, right click and
-                        create a new text file and call it
-                        “newpage.html”.
+                        Create a file called "delete.php",
+                        and we are ready to delete some
+                        records!
                       </p>
                     </div>
                     <div class="fr">
                       <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/secondpageone.PNG" alt=""></img>
+                        <img src="images/deletefile.PNG" alt=""></img>
                       </div>
                     </div>
                   </div>
-                  <br>
                 </div>
-                  <br>
-                  <p>
-                    Edit the newpage with the same rules as the
-                    other page, (
-                    <!DOCTYPE>, etc).
-                  </p>
-                  <p>
-                    Edit the index.html page to include an anchor
-                    (&lt;a>&lt;/a>) tag with an href to
-                    “newpage.html”
-                  </p>
-                  <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-firstPage" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyResult codetab">index.html</code></a>
-                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-secondPage" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">newpage.html</code></a>
-                    </div>
-                  </nav>
-                  <br>
-                  <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="-firstPage" role="tabpanel" aria-labelledby="nav-contact-tab">
-                      <div class='CodeBoxL'>
-                        <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>Come to our site&lt;/h1>
-    &lt;p>Click on &lt;a href="newpage.html">this&lt;/a>
-    word to go to another page.&lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="-secondPage" role="tabpanel" aria-labelledby="nav-home-tab">
-                      <div class='CodeBoxL'>
-                        <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Second Page!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>Welcome To Page Two!&lt;/h1>
-    &lt;p>It's different than where you came from!&lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                      </div>
+                <br>
+                <p>Add this code into the "delete.php".</p>
+
+
+                <!-- NEED TO BE CLEANED BELOW  -->
+
+
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-php7" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">delete.php</code></a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="-php7" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class='CodeBoxL'>
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;?php
+  session_start();
+  if(!$_SESSION['user']) {
+    header("location:index.php");
+  }
+
+  if($_SERVER['REQUEST_METHOD'] == "GET") {
+    $con = mysqli_connect("localhost", "root", "", "first_db");
+    $id = $_GET['id'];
+    mysqli_query($con, "DELETE FROM list WHERE id='$id'");
+    header(location:home.php);
+  }
+?>
+</pre>
                     </div>
                   </div>
-                  <p>
-                    If you open index.html and click on the new
-                    link, it should move you to the next page. Did
-                    it?
-                  </p>
-
-                  <a id="button">
-                  <h2>Button <code class="prettifyHTML">&lt;button&gt;</code></h2>
-                </a>
-                  <p>Sometimes an <code class="prettifyHTML"> &lt;a></code> tag seems a bit plain, that is when it can be useful to use a button instead.</p>
-                  <h3 class="paraTitle"><code class="prettifyHTML">&lt;button&gt;</code> with anchor </h3>
-
-                  <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html9" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result9" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-                    </div>
-                  </nav>
-                  <br>
-                  <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="-html9" role="tabpanel" aria-labelledby="nav-home-tab">
-                      <div class='CodeBoxL'>
-                        <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;h1>Come to our site&lt;/h1>
-  &lt;a href="newpage.html">&lt;button>Next Page&lt;/button>&lt;/a>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="-result9" role="tabpanel" aria-labelledby="nav-contact-tab">
-                      <div class="resultBox">
-                        <h1>Come to our site</h1>
-                        <a href="newpage.html"><button>Next Page</button></a>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    Almost anything can be turned into a link if
-                    you put it inside an anchor tag.
-                  </p>
-                  <p>
-                    Definitely something that you should play
-                    around with.
-                  </p>
+                </div>
+                <p>Now you can delete items! Go ahead and try it.</p>
               </section>
 
-              <section id="section_CSS">
-                <a id="_CSS">
-                  <h2>
-                    <codeG>CSS</codeG>
-                  </h2>
-                </a>
-                <p>
-                  We’ve added text, images, and various other element tags. Yet, our pages still look a bit dull.
-                  CSS (Cascading Style Sheets) is used to change the look of your elements. This is done through
-                  colors, padding, margins, alignments, and more!
-                </p>
-                <a id="gettingstartedcss">
-                  <h2>Getting Started</h2>
-                </a>
-                <p>
-                  Just like everything else, our CSS file will be separate and linked onto the website. This is done
-                  so that the style can be reused between pages
-                </p>
-                <h3 class="paraTitle">Creating CSS file</h3>
-                <div class="paraSection">
-                  <div class="para">
-                    <div class="fl">
-                      <p>
-                        In your projects folder, right click and create a
-                        new folder called “stylesheet”.
-                      </p>
-                    </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/cssone.PNG" alt=""></img>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="para">
-                    <div class="fl">
-                      <p>
-                        In the folder “stylesheet”, create a new file
-                        called “stylesheet.css”.
-                      </p>
-                      <p>
-                        This will hold all of your style information
-                        throughout your entire site! Placing it in it’s
-                        own file will allow us to use it in every page
-                        (as you’ll see later).
-                      </p>
-                    </div>
-                    <div class="fr">
-                      <div class="tutImageContainer">
-                        <img class="tutImage" src="examples/images/csstwo.PNG" alt=""></img>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                <a id="thebasics">
-                  <h2>The Basics</h2>
-                </a>
-                <p>There are so many uses for CSS, the basic of which is text alignment, size, and color</p>
-                <h3 class="paraTitle">Creating CSS file</h3>
+              <!-- section divider -->
+
+
+              <section id="section_DPD">
+                <a id="_DPD"><h1><codeG>Displaying "Public Data"</codeG></h1></a>
                 <p>
-                  Open the stylesheet.css file and add the
-                  following code…
+                  We've done quite a bit, but what you now have is very impressive! However, there is one last
+                  thing we need to add into our site, and that is the ability for "guest" users (the users who are not
+                  logged in) to see the "public posts" that we have set.
                 </p>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-contact-tab" data-toggle="tab" href="#-css10" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyCSS codetab">CSS</code></a>
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-php1" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifySQL codetab">index.php</code></a>
                   </div>
                 </nav>
                 <br>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="-css10" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="tab-pane fade show active" id="-php1" role="tabpanel" aria-labelledby="nav-home-tab">
                     <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-css CodeBoxBuffer">
-body {
-  background-color: lightblue;
-}
+                      <pre class="prettyprint linenums lang-php CodeBoxBuffer">
+&lt;!DOCTYPE html>
+&lt;html>
 
-h1 {
-  color: white;
-  text-align: center;
-}
+  &lt;head>
+    &lt;title>PHP/SQL Guest Page&lt;/title>
+  &lt;/head>
 
-p {
-  font-size: 20px;
-}</pre>
+  &lt;body>
+    &lt;?php
+      echo "&lt;p>Hello, World!&lt;/p>";
+    ?>
+    &lt;a href="login.php">Click here to login&lt;/a>
+    &lt;a href="register.php">Click here to register&lt;/a>
+  &lt;/body>
+
+  &lt;br>
+  &lt;h2 align="center">My List&lt;/h2>
+  &lt;table border="1px" width="100%">
+    &lt;tr>
+      &lt;th>ID&lt;/th>
+      &lt;th>Details&lt;/th>
+      &lt;th>Edit&lt;/th>
+      &lt;th>Delete&lt;/th>
+    &lt;/tr>
+
+    &lt;?php
+      $con = mysqli_connect("localhost", "root", "", "first_db");
+      $query = mysqli_query($con, "Select * from list Where public='yes'");
+      while($row = mysqli_fetch_array($query)) {
+        Print "&lt;tr>";
+        Print '&lt;td align="center">' . $row['id'] . "&lt;/td>";
+        Print '&lt;td align="center">' . $row['details'] . "&lt;/td>";
+        Print '&lt;td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] . "&lt;/td>";
+        Print '&lt;td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] . "&lt;/td>";
+        Print "&lt;/tr>";
+      }
+    ?>
+  &lt;/table>
+&lt;/html>
+</pre>
                     </div>
                   </div>
                 </div>
-                <div class="paraSection">
-                  <div class="para">
-
-                    <p>
-                      Body: Is where most of your code is placed in
-                      your HTML file (remember the
-                      &lt;body>&lt;/body> tags?) So altering the “body”
-                      element is altering the entirety of your page.
-                    </p>
-                    <p>
-                      h1/p: The h1 and p element inside your
-                      HTML Code
-                    </p>
-                    <p>
-                      All of these are known as “rules” for your
-                      style. The <strong> selector</strong>​ is the element you’re
-                      changing, and the <strong> declaration​</strong> is what is
-                      being changed from what you selected.
-                    </p>
-                  </div>
+              </section>
+              <section id="section_FINALPRODUCT">
+                <a id="_FINALPRODUCT"><h1><codeG>Final Product</codeG></h1></a>
+                <div class="paraCenter">
+                  <h1>You've made it!</h1>
+                  <p>
+                    One thing that you may have noticed is that the table is the same for every logged in user. This s
+                    because if you want a different list for every user, you would need to create a new table for every
+                    new user who registers to your site. Unfortunately, that goes beyond the scope of this project
+                    sheet. In the PHP course you can learn more about PHP and it’s relationship with SQL to create
+                    more complex websites and databases. Until then, you still have something very impressive to
+                    show off!
+                  </p>
                 </div>
-                <br>
-
-                <a id="connectingthetwo">
-                  <h2>Connecting the two <code class="prettifyHTML">&lt;link&gt;</code></h2>
-                </a>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html11" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-css11" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyCSS codetab">CSS</code></a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#-result11" role="tab" aria-controls="nav-contact" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-                  </div>
-                </nav>
-                <br>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show" id="-css11" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-css CodeBoxBuffer">
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  font-size: 20px;
-}</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade show active" id="-html11" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class='CodeBoxL'>
-                      <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1>Come to our site&lt;/h1>
-    &lt;a href="newpage.html">&lt;button>Next Page&lt;/button>&lt;/a>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="-result11" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <div class="resultBox" style="background-color:lightblue;">
-                      <h1 style="color:white;text-align:center;">Come to our site</h1>
-                      <a href="newpage.html" style="font-size:20px;"><button>Next Page</button></a>
-                    </div>
-                  </div>
+                <div class="finalResultWapper">
+                  <img src="images/final.PNG" alt=""></img>
                 </div>
-                <p>
-                  The
-                  <code class="prettifyHTML">&lt;link></code> tag imports external files into our file to be used. In this case, it gives this file the
-                  CSS style. Notice how different it looks?
-                </p>
-          </div>
+              </section>
 
-          <a id="id">
-            <h2>Id <code class="prettifyCSS">#</code></h2>
-          </a>
-          <p>
-            Beyond selecting rules for elements, you can also select specific elements by either “id” or
-            “class”. They are both very similar, the difference is that “id” is meant for one element while
-            “class” is for multiple.
-          </p>
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html12" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#-css12" role="tab" aria-controls="nav-profile" aria-selected="false"><code class="prettifyCSS codetab">CSS</code></a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#-result12" role="tab" aria-controls="nav-profile" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-            </div>
-          </nav>
-          <br>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="-html12" role="tabpanel" aria-labelledby="nav-home-tab">
-              <div class='CodeBoxL'>
-                <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;p id="para1"> Hello World! &lt;/p> &lt;!-- Add this line! -->
-  &lt;p>This paragraph is not affected by the style.&lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="-css12" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class='CodeBoxL'>
-                <pre class="prettyprint linenums lang-css CodeBoxBuffer">
-#para1 {
-  text-align: center;
-  color: red;
-} </pre>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="-result12" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class="resultBox">
-                <p style="text-align:center;color:red;">Hello World</p>
-                <p>This paragraph is not affected by the style.</p>
-              </div>
-            </div>
+              <section id="section_KC">
+                <a id="_KC"><h1><codeG>Knowledge Check</codeG></h1></a>
+                <ol>
+                  <li>What is SQL?</li>
+                  <li> How do you have users enter text and have it hidden?</li>
+                  <li>How do you create a connection to a SQL database?</li>
+                </ol>
+              </section>
+
+              <section id="section_CHALLENGES">
+                <a id="_CHALLENGES"><h1><codeG>Challenges</codeG></h1></a>
+                <p>None yet!</p>
+              </section>
+
+            </article>
           </div>
-          <br>
-          <p>
-            <i>
-              Notice how they’re both <code class="prettifyHTML">&lt;p>&lt;/p></code> tags? But
-              only one is changed, that’s why we have “id”
-              properties?
-            </i>
-          </p>
-          <p>
-            “id” elements are accessed by “#” in front of them in the CSS file.
-          </p>
+          <!-- <div class="docs-prevnext"><a class="docs-prev button" href="#">← Lorem</a><a class="docs-next button" href="#">Ipsum →</a></div> -->
         </div>
-
-        <a id="class">
-          <h2>Class <code class="prettifyCSS">.</code></h2>
-        </a>
-        <p>
-          You’ve done “id” for one element, now to see class affect multiple elements.
-        </p>
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html13" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#-css13" role="tab" aria-controls="nav-profile" aria-selected="false"><code class="prettifyCSS codetab">CSS</code></a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#-result13" role="tab" aria-controls="nav-profile" aria-selected="false"><code class="prettifyResult codetab">Result</code></a>
-          </div>
-        </nav>
-        <br>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="-html13" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class='CodeBoxL'>
-              <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;h1 class="center">Red and center-aligned heading&lt;/h1>
-  &lt;p class="center">Red and center-aligned heading&lt;/p>
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="-css13" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <div class='CodeBoxL'>
-              <pre class="prettyprint linenums lang-css CodeBoxBuffer">
-.center {
-  text-align: center;
-  color: red;
-} </pre>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="-result13" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <div class="resultBox">
-              <h1 style="text-align:center;color:red;">Red and center-aligned heading</h1>
-              <p style="text-align:center;color:red;">Red and center-aligned heading</p>
-            </div>
-          </div>
-        </div>
-        <div class="paraSection">
-          <p>
-            <i>
-              Both different elements (one an h1, and the
-              other a p tag) yet they are both now changed.
-            </i>
-          </p>
-          <p>
-            To change the rule of a “class”, put a period (.) before the class name in your CSS rule.
-          </p>
-        </div>
-        <br>
-        <p>
-          There are so many ways to alter CSS, go to <a href="https://www.w3schools.com/css/default.asp"><u>here</u></a> for many
-          more things that you can do with CSS.
-        </p>
-        </section>
-
-        <section id="section_NAVBAR">
-          <a id="_NAVBAR">
-            <h2>
-              <codeG>Navbar</codeG>
-            </h2>
-          </a>
-          <p>
-            Final thing to do before we finish this lesson and get into the project, is do a quick tutorial on
-            how to make a basic floating header.
-          </p>
-          <p>
-            Almost every website you go to has a header, they provide the name of the site as well as
-            navigational links to take you to other places on the site. The best headers are the ones that
-            follow you as you scroll down the page.
-          </p>
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#-html14" role="tab" aria-controls="nav-home" aria-selected="true"><code class="prettifyHTML codetab">HTML</code></a>
-              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#-css14" role="tab" aria-controls="nav-profile" aria-selected="false"><code class="prettifyCSS codetab">CSS</code></a>
-            </div>
-          </nav>
-          <br>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="-html14" role="tabpanel" aria-labelledby="nav-home-tab">
-              <div class='CodeBoxL'>
-                <pre class="prettyprint linenums lang-html CodeBoxBuffer">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  &lt;link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Website!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-
-    &lt;div class="navbar">
-      &lt;a href="#">Home&lt;/a>
-      &lt;a href="#">News&lt;/a>
-      &lt;a href="#">Contact&lt;/a>
-    &lt;/div>
-
-    &lt;div class="main">
-      &lt;h1>Fixed Top Menu&lt;/h1>
-      &lt;h2>Scroll this page to see the effect&lt;/h2>
-      &lt;h3>The navagation bar will start at the
-             top of the page while scrolling&lt;/h3>
-
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-      &lt;p>Some text Some text Some text Some text ...&lt;/p>
-    &lt;/div>
-
-  &lt;/body&gt;
-&lt;/html&gt;</pre>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="-css14" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <div class='CodeBoxL'>
-                <pre class="prettyprint linenums lang-css CodeBoxBuffer">
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px;
-}</pre>
-              </div>
-            </div>
-            <p>Pay special attention to where classes are.</p>
-            <p>See the :hover? That is a common CSS rule to change properties based on whether an element
-              is being hovered over or not.
-            </p>
-            <p>Also notice the CSS rule .navbar a, this means that it will only affect the anchor elements that
-              are inside the .navbar class. If you were to create an anchor tag somewhere else, it wouldn’t
-              look like the one in your header.</p>
-            <p>There are many other elements in here, can you figure out what they all mean? (We will
-              expand more on this in a web development specific course).</p>
-        </section>
-
-        <a id="requirements">
-              <h2>
-                <codeB>Requirements</codeB>
-              </h2>
-            </a>
-        <p>Now that we’ve gone over all the basic aspects of a basic HTML/CSS website, you are going to
-          make a website based on whatever you would like! The requirements of this project are as
-          follows:</p>
-        <ol>
-          <li>Website must use proper file hierarchy and structure</li>
-          <ol>
-            <li>First page index.html</li>
-            <li>css and images folder</li>
-          </ol>
-          <li>Website must have a title tag</li>
-          <li>Add a floating header</li>
-          <ol>
-            <li>Have at least one styled button on it</li>
-          </ol>
-          <li>Body of website must include the following</li>
-          <ol>
-            <li>One header and one paragraph tag</li>
-            <li>Bold or italicize at least one word</li>
-            <li>A list (either ordered or unordered)</li>
-            <li>One line break</li>
-            <li>One image</li>
-            <li>One table</li>
-          </ol>
-          <li>
-            Must have more than one page (second page just needs to follow proper html structure,
-            you don’t need to make it as complicated as the main page unless you want to).
-          </li>
-          <li>Have your CSS file separate and placed in the appropriate folder</li>
-          <li>Other CSS requirements</li>
-          <ol>
-            <li>Have one proper use of a class</li>
-            <li>Have one proper use of an id</li>
-            <li>Style an element that is neither of the above (body would be a good one)</li>
-          </ol>
-        </ol>
-        <p>Pages must look nice and flow well together, this must look like one big project and not just a
-          bunch of random elements put together.
-        </p>
-        <p> <a href="https://www.w3schools.com/"><u>W3Schools</u> </a> is a great resource to see what you can do in your
-          website. Highly recommended you give it a check</p>
-        <a id="challenges">
-              <h2>
-                <codeR>Challenges</codeR>
-              </h2>
-            </a>
-        <p>None yet!</p>
-        </article>
       </div>
-      <!-- <div class="docs-prevnext"><a class="docs-prev button" href="#">← Lorem</a><a class="docs-next button" href="#">Ipsum →</a></div> -->
     </div>
   </div>
-  </div>
-
   <footer class="nav-footer" id="footer">
     <section class="sitemap">
       <!-- <div>
@@ -2087,8 +4099,10 @@ p {
   </div>
 </body>
 
-</html>
-`
+</html>`
+
+
+
 
 var defaultCodeJS = `// This is a circle object
 // It takes an x and a y for its location
