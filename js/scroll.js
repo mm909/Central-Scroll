@@ -9,7 +9,7 @@ $(document).ready(function() {
 });
 
 function stop() {
-  if(doScroll){
+  if (doScroll) {
     doScroll = false;
     $("#stopButton").html("Go")
     $('#stopButton').removeClass('btn-danger');
@@ -51,8 +51,8 @@ function pageScroll() {
     tempScroll = 1;
     tempDelay = 50;
   }
-  if(doScroll)
-  window.scrollBy(0, tempScroll);
+  if (scrolling)
+    window.scrollBy(0, tempScroll);
   scrolldelay = setTimeout(pageScroll, tempDelay);
 }
 

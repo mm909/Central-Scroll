@@ -1,5 +1,6 @@
 var textType = "JS";
 var textSpeed = "Medium"
+var scrolling = false;
 
 $(document).ready(function() {
   popluateText();
@@ -11,12 +12,12 @@ function setTextSpeed(s) {
   $("#speedButton2").html(textSpeed);
 }
 
-function setTextType(t,s) {
+function setTextType(t, s) {
   textType = t;
   $("#langButton").html(textType)
   $("#langButton2").html(textType)
   setPrettyPrintClass();
-  if(s){
+  if (s) {
     $("#codeScroll").html(escape($("#codeInput").val()))
     $('.prettyprinted').removeClass('prettyprinted');
     prettyPrint();
@@ -24,6 +25,7 @@ function setTextType(t,s) {
 }
 
 function goText() {
+  scrolling = true;
   setTextSpeed(textSpeed)
   if ($("#codeInput").val() == "") {
     if (textType == "JS") {
@@ -42,9 +44,10 @@ function goText() {
   prettyPrint();
 }
 
-function backText(){
+function backText() {
   $(".wrapper").css("display", "none");
   $(".startScreen").css("display", "block");
+  scrolling = false;
 }
 
 function popluateText() {
@@ -57,7 +60,7 @@ function clearText() {
 
 function resetText() {
   console.time('loading')
-  $("#loading").css("display","block")
+  $("#loading").css("display", "block")
   if (textType == "JS") {
     $("#codeInput").val(defaultCodeJS);
   } else if (textType == "HTML") {
@@ -66,7 +69,7 @@ function resetText() {
     $("#codeInput").val(defaultCodeCSS);
   }
   console.timeEnd('loading')
-  $("#loading").css("display","none")
+  $("#loading").css("display", "none")
 }
 
 function setPrettyPrintClass() {
