@@ -5,3 +5,6 @@ Central Scroll was developed as a screen saver and timer for Code Central. Centr
 
 # Version
 12.2.2018.1.20
+
+# Tags
+'Google Prettify', 'Paid', 'MyCodeCentral', 'jquery', 'bootstrap', 'prettify.js', 'file upload', 'user input', 'in use', 'deployed', 'prettyprint'
