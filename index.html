@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
   <script language="javascript" type="text/javascript" src="js/text.js"></script>
   <script language="javascript" type="text/javascript" src="js/exampleText.js"></script>
   <script language="javascript" type="text/javascript" src="js/scroll.js"></script>
@@ -21,6 +22,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/prettyprint.css">
+  <script language="javascript" type="text/javascript" src="text/sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="text/vehicle.js"></script>
 </head>
 
 <body>
@@ -108,13 +111,15 @@
   </div>
   <div class="wrapper">
     <a class="class-page-link gitbutton bottomGitLink" href="https://github.com/mm909/" rel="noreferrer noopener">GitHub</a>
-
+    <div class="p5CanvasWrapper">
+      <div id="canvasContainer"></div>
+    </div>
     <pre id="codeScroll" class="prettyprint linenums CodeBoxBuffer"></pre>
     <div id="scrollingButtonGroup">
       <div class="buttons float-right">
         <button id="hideShow" type="button" onclick="hideShow()" class="btn btn-hideShow">Hide</button>
         <span id="hideShowButtons">
-
+          <button id="text" type="button" onclick="textShow()" class="btn btn-light">Text</button>
           <div class="btn-group">
             <button id="langButton2" type="button" class="noMargin btn btn-info">JS</button>
             <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

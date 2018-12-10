@@ -24,9 +24,15 @@
 
 #scrollingButtonGroup {
   position: fixed;
-  top: 10px;
+  top: 15px;
   right: 10px;
   height: 100%;
+}
+
+.p5CanvasWrapper {
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .buttonGroup {
