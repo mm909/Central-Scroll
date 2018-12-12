@@ -3,7 +3,14 @@ var vehicles = [];
 let words = [];
 let text = false;
 let textSize = 225;
-let sizeChange = 20;
+let sizeChange = 1;
+
+function runScript(e) {
+    if (e.keyCode == 13) {
+        var tb = document.getElementById("sizeInput");
+        redo(tb.value);
+    }
+}
 
 function textShow() {
   text = !text;
