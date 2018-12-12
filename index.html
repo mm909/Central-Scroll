@@ -18,10 +18,13 @@
   <script language="javascript" type="text/javascript" src="js/defaultCode.js"></script>
   <script language="javascript" type="text/javascript" src="js/file.js"></script>
   <script language="javascript" type="text/javascript" src="js/fade.js"></script>
+  <script language="javascript" type="text/javascript" src="js/options.js"></script>
   <script language="javascript" type="text/javascript" src="timer/timer.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/prettyprint.css">
+  <link rel="stylesheet" href="css/option.css">
+  <link rel="stylesheet" href="css/buttons.css">
   <script language="javascript" type="text/javascript" src="text/sketch.js"></script>
   <script language="javascript" type="text/javascript" src="text/vehicle.js"></script>
 </head>
@@ -117,20 +120,21 @@
     <pre id="codeScroll" class="prettyprint linenums CodeBoxBuffer"></pre>
     <div id="scrollingButtonGroup">
       <div class="buttons float-right">
-        <button id="hideShow" type="button" onclick="hideShow()" class="btn btn-hideShow">Hide</button>
+        <!-- <button id="hideShow" type="button" onclick="hideShow()" class="btn btn-hideShow">Hide</button> -->
+        <button id="options" type="button" onclick="showOptions()" class="btn btn-dark">Options</button>
         <span id="hideShowButtons">
-          <div class="btn-group">
+          <!-- <div class="btn-group">
             <button id="text" type="button" onclick="textShow()" class="btn btn-light">Text</button>
             <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </button>
             <div class="dropdown-menu">
-              <div class="">
-                <div class="input-group">
+              <div class=""> -->
+          <!-- <div class="input-group">
                   <input id="sizeInput" onkeyup="runScript(event)" type="text" name="" value=""></input>
-                </div>
-              </div>
-              <hr>
-              <div class="animationCheck" style="margin-left:5px;">
+                </div> -->
+          <!-- </div>
+              <hr> -->
+          <!-- <div class="animationCheck" style="margin-left:5px;">
                 <div class="form-check">
                   <label class="form-check-label">
                     <input type="radio" class="form-check-input" name="optionsRadios" id="letterOption" value="1" checked>
@@ -176,14 +180,14 @@
                     hide
                   </label>
                 </div>
-              </div>
-              <hr>
-              <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) - 20, event)" href="#">Smaller</a> -->
-              <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) + 20, event)" href="#">Bigger</a> -->
-              Text Editor (Soon?)
-            </div>
-          </div>
-          <div class="btn-group">
+              </div> -->
+          <!-- <hr> -->
+          <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) - 20, event)" href="#">Smaller</a> -->
+          <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) + 20, event)" href="#">Bigger</a> -->
+          <!-- Text Editor (Soon?) -->
+          <!-- </div>
+          </div> -->
+          <!-- <div class="btn-group">
             <button id="langButton2" type="button" class="noMargin btn btn-info">JS</button>
             <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </button>
@@ -192,8 +196,8 @@
               <a class="dropdown-item" onclick="setTextType('HTML',true)" href="#">HTML</a>
               <a class="dropdown-item" onclick="setTextType('CSS',true)" href="#">CSS</a>
             </div>
-          </div>
-          <div class="btn-group">
+          </div> -->
+          <!-- <div class="btn-group">
             <button id="speedButton2" type="button" class="noMargin btn btn-warning">Medium</button>
             <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </button>
@@ -204,9 +208,8 @@
               <a class="dropdown-item" onclick="setTextSpeed('Fast')" href="#">Fast</a>
               <a class="dropdown-item" onclick="setTextSpeed('Very Fast')" href="#">Very Fast</a>
             </div>
-          </div>
-          <button id="stopButton" type="button" onclick="stop()" class="btn btn-danger ">Stop</button>
-          <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Back</button>
+          </div> -->
+          <!-- <button id="stopButton" type="button" onclick="stop()" class="btn btn-danger ">Stop</button> -->
       </div>
 
       </span>
@@ -227,7 +230,95 @@
           </div>
         </div>
       </div> -->
+    <div class="optionShadowBox">
+      <div class="optionsBox">
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="inputState">Language</label>
+            <select onchange="setTextType($('#langSelect').val(), true)" id="langSelect" class="form-control">
+              <option selected>JS</option>
+              <option>HTML</option>
+              <option>CSS</option>
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="inputState">Speed</label>
+            <select onchange="setTextSpeed($('#speedSelect').val())" id="speedSelect" class="form-control">
+              <option>Very Slow</option>
+              <option>Slow</option>
+              <option selected>Medium</option>
+              <option>Fast</option>
+              <option>Very Fast</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row ">
+          <div class="form-group col labelRow">
+            <label for="inputState">Text</label>
+          </div>
+          <div class="form-group col labelRow">
+            <label for="inputState">Scroll</label>
+          </div>
+          <!-- <div class="form-group col labelRow">
+            <label for="inputState">Scroll</label>
+          </div> -->
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label class="switch">
+              <input onchange="textShow()" type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="form-group col">
+            <label class="switch">
+              <input onchange="stop()" type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <!-- <div class="form-group col">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div> -->
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Text Size</label>
+              <input id="sizeInput" class="form-control" onkeyup="runScript(event)" type="text" name="" value="">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Place Holding</label>
+              <input type="password" class="form-control" disabled id="inputPassword4" placeholder="Place Holding">
+            </div>
+          </div>
+        </form>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="inputState">Animation</label>
+            <select onchange="setAnimation($('#animationSelect').val())" id="animationSelect" class="form-control">
+              <option selected>Letter</option>
+              <option>Word</option>
+              <option>None</option>
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="inputState">Dot placement</label>
+            <select onchange="setDot($('#dotSelect').val())" id="dotSelect" class="form-control">
+              <option>Full</option>
+              <option selected>Half</option>
+              <option>Vertical</option>
+              <option>Hide</option>
+            </select>
+          </div>
+        </div>
+        <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Home</button>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>

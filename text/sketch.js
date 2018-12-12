@@ -18,6 +18,28 @@ $(document).ready(function() {
   document.getElementById("sizeInput").value = textSize
 });
 
+function setAnimation(x) {
+  if (x == "Letter") {
+    animationOpt = 1
+  } else if (x == "Word") {
+    animationOpt = 2
+  } else if (x == "None") {
+    animationOpt = 3
+  }
+}
+
+function setDot(x) {
+  if (x == "Full") {
+    dotOpt = 1
+  } else if (x == "Half") {
+    dotOpt = 2
+  } else if (x == "Vertical") {
+    dotOpt = 3
+  } else if (x == "Hide") {
+    dotOpt = 4
+  }
+}
+
 function runScript(e) {
   if (e.keyCode == 13) {
     var tb = document.getElementById("sizeInput");
@@ -32,9 +54,9 @@ function textShow() {
 function preload() {
   font = loadFont('text/AvenirNextLTPro-Demi.otf');
 }
+let dotOpt = 2;
 
 function setup() {
-  console.log("Setting up");
   swapingCirclesInt = setInterval(next, 5000);
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("canvasContainer")
@@ -75,10 +97,9 @@ function setup() {
       for (var j = 0; j < count; j++) {
         let tempx = 0;
         let tempy = 0;
-        let opt = parseInt($('input[name=size]:checked').val());
-        if (opt == 1) {
+        if (dotOpt == 1) {
           tempx = random(width / 2, width)
-        } else if (!opt) {
+        } else if (!dotOpt) {
           tempx = random(width)
         }
         tempy = random(500 + 100, height - 25)
@@ -91,18 +112,18 @@ function setup() {
 }
 
 let index = 0;
+let animationOpt = 1;
 
 function draw() {
   colorMode(RGB)
   background(47, 54, 64);
   clear();
   if (text) {
-    let opt = $('input[name=optionsRadios]:checked').val();
-    if (opt == 1) {
+    if (animationOpt == 1) {
       if (random(1) < 0.15) moveLetter();
-    } else if (opt == 2) {
+    } else if (animationOpt == 2) {
       if (random(1) < 0.05) moveWord();
-    } else if (opt == 3) {
+    } else if (animationOpt == 3) {
 
     }
     for (var i = 0; i < vehicles.length; i++) {
@@ -131,20 +152,19 @@ function next() {
 
   if (words[index % words.length].length < words[(index - 1) % words.length].length) {
     for (var i = words[index % words.length].length; i < words[(index - 1) % words.length].length; i++) {
-      let opt = parseInt($('input[name=size]:checked').val());
-      switch (opt) {
-        case 0:
+      switch (dotOpt) {
+        case 1:
           vehicles[i].target.x = random(width)
           vehicles[i].target.y = random(500 + 100, height - 25)
           break;
-        case 1:
+        case 2:
           vehicles[i].target.x = random(width / 2, width)
           vehicles[i].target.y = random(500 + 100, height - 25)
           break;
-        case 2:
+        case 3:
           vehicles[i].target.y = random(500 + 100, height - 25)
           break;
-        case 3:
+        case 4:
           vehicles[i].target.x = lx
           vehicles[i].target.y = ly
           break;
