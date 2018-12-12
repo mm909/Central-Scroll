@@ -129,6 +129,7 @@
                   <input id="sizeInput" onkeyup="runScript(event)" type="text" name="" value=""></input>
                 </div>
               </div>
+              <hr>
               <div class="animationCheck" style="margin-left:5px;">
                 <div class="form-check">
                   <label class="form-check-label">
@@ -149,9 +150,31 @@
                   </label>
                 </div>
               </div>
-
-              <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) - 20, event)" href="#">Smaller</a>
-              <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) + 20, event)" href="#">Bigger</a>
+              <hr>
+              <div class="animationCheck" style="margin-left:5px;">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="full" value="0">
+                    Full
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="half" value="1" checked>
+                    Half
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="half" value="2">
+                    vert
+                  </label>
+                </div>
+              </div>
+              <hr>
+              <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) - 20, event)" href="#">Smaller</a> -->
+              <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) + 20, event)" href="#">Bigger</a> -->
+              Text Editor (Soon?)
             </div>
           </div>
           <div class="btn-group">

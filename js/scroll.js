@@ -20,9 +20,6 @@ function stop() {
     $('#stopButton').removeClass('btn-success');
     $('#stopButton').addClass('btn-danger');
   }
-
-
-
 }
 
 function pageScroll() {

@@ -35,12 +35,12 @@ function preload() {
 
 function setup() {
   console.log("Setting up");
-  swapingCirclesInt = setInterval(next, 3000);
-  var canvas = createCanvas(windowWidth / 2, windowHeight);
+  swapingCirclesInt = setInterval(next, 5000);
+  var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("canvasContainer")
 
   for (var i = 0; i < strings.length; i++) {
-    words.push(font.textToPoints(strings[i], 10, 500, textSize, {
+    words.push(font.textToPoints(strings[i], (windowWidth / 2) + 10, 500, textSize, {
       sampleFactor: 0.1
     }))
   }
@@ -73,7 +73,16 @@ function setup() {
     if (vehicles.length < words[i].length) {
       let count = words[i].length - vehicles.length;
       for (var j = 0; j < count; j++) {
-        var vehicle = new Vehicle(random(width), random(500 + 100, height - 25));
+        let tempx = 0;
+        let tempy = 0;
+        let opt = parseInt($('input[name=size]:checked').val());
+        if (opt == 1) {
+          tempx = random(width / 2, width)
+        } else if (!opt) {
+          tempx = random(width)
+        }
+        tempy = random(500 + 100, height - 25)
+        var vehicle = new Vehicle(tempx, tempy);
         vehicles.push(vehicle);
       }
     }
@@ -88,7 +97,7 @@ function draw() {
   background(47, 54, 64);
   clear();
   if (text) {
-    let opt = $("input:checked").val();
+    let opt = $('input[name=optionsRadios]:checked').val();
     if (opt == 1) {
       if (random(1) < 0.15) moveLetter();
     } else if (opt == 2) {
@@ -117,7 +126,12 @@ function next() {
   }
   if (words[index % words.length].length < words[(index - 1) % words.length].length) {
     for (var i = words[index % words.length].length; i < words[(index - 1) % words.length].length; i++) {
-      vehicles[i].target.x = random(width)
+      let opt = parseInt($('input[name=size]:checked').val());
+      if (opt == 1) {
+        vehicles[i].target.x = random(width / 2, width)
+      } else if (!opt) {
+        vehicles[i].target.x = random(width)
+      }
       vehicles[i].target.y = random(500 + 100, height - 25)
     }
   }
@@ -131,7 +145,7 @@ function redo(x, e) {
   textSize = x;
   words = [];
   for (var i = 0; i < strings.length; i++) {
-    words.push(font.textToPoints(strings[i], 10, 500, textSize, {
+    words.push(font.textToPoints(strings[i], (windowWidth / 2) + 10, 500, textSize, {
       sampleFactor: 0.1
     }))
   }
