@@ -3,6 +3,7 @@ var vehicles = [];
 let words = [];
 let text = false;
 let textSize = 190;
+let moveSpeed = 0.10;
 let sizeChange = 1;
 let nexting = false;
 let strings = [
@@ -16,6 +17,7 @@ let strings = [
 
 $(document).ready(function() {
   document.getElementById("sizeInput").value = textSize
+  document.getElementById("MoveSpeed").value = moveSpeed
 });
 
 function setAnimation(x) {
@@ -42,8 +44,14 @@ function setDot(x) {
 
 function runScript(e) {
   if (e.keyCode == 13) {
-    var tb = document.getElementById("sizeInput");
-    redo(tb.value);
+    var t = document.getElementById("sizeInput");
+    redo(t.value);
+  }
+}
+
+function setMoveSpeed(e) {
+  if (e.keyCode == 13) {
+    moveSpeed = document.getElementById("MoveSpeed").value;
   }
 }
 
@@ -120,9 +128,9 @@ function draw() {
   clear();
   if (text) {
     if (animationOpt == 1) {
-      if (random(1) < 0.15) moveLetter();
+      if (random(1) < moveSpeed) moveLetter();
     } else if (animationOpt == 2) {
-      if (random(1) < 0.05) moveWord();
+      if (random(1) < moveSpeed) moveWord();
     } else if (animationOpt == 3) {
 
     }
@@ -191,7 +199,7 @@ function redo(x, e) {
   if (e) {
     e.preventDefault();
   }
-  console.log(x);
+  // console.log(x);
   textSize = x;
   words = [];
   for (var i = 0; i < strings.length; i++) {
