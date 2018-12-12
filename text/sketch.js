@@ -5,6 +5,10 @@ let text = false;
 let textSize = 225;
 let sizeChange = 1;
 
+$(document).ready(function() {
+document.getElementById("sizeInput").value = textSize
+});
+
 function runScript(e) {
     if (e.keyCode == 13) {
         var tb = document.getElementById("sizeInput");
@@ -99,8 +103,11 @@ function next() {
 
 }
 
-function redo(x) {
-  textSize += (x * sizeChange)
+function redo(x, e) {
+  if(e){
+    e.preventDefault();
+  }
+  textSize = x;
   words = [];
   words.push(font.textToPoints('Code', 10, 500, textSize, {
     sampleFactor: 0.1
@@ -135,4 +142,5 @@ function redo(x) {
       }
     }
   }
+  document.getElementById("sizeInput").value = textSize
 }

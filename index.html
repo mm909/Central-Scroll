@@ -124,9 +124,13 @@
             <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </button>
             <div class="dropdown-menu">
-              <input id="sizeInput" onkeyup="runScript(event)" type="text" name="" value="">
-              <a class="dropdown-item" onclick="redo(-20)" href="#">Smaller</a>
-              <a class="dropdown-item" onclick="redo(20)" href="#">Bigger</a>
+              <div class="">
+                <div class="input-group">
+                  <input id="sizeInput" onkeyup="runScript(event)" type="text" name="" value=""></input>
+                </div>
+              </div>
+              <a class="dropdown-item" onclick="redo(document.getElementById('sizeInput').value - 20, event)" href="#">Smaller</a>
+              <a class="dropdown-item" onclick="redo(document.getElementById('sizeInput').value + 20, event)" href="#">Bigger</a>
             </div>
           </div>
           <div class="btn-group">
