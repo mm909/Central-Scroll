@@ -88,8 +88,14 @@ function draw() {
   background(47, 54, 64);
   clear();
   if (text) {
-    // if (random(1) < 0.05) moveWord();
-    if (random(1) < 0.15) moveLetter();
+    let opt = $("input:checked").val();
+    if (opt == 1) {
+      if (random(1) < 0.15) moveLetter();
+    } else if (opt == 2) {
+      if (random(1) < 0.05) moveWord();
+    } else if (opt == 3) {
+
+    }
     for (var i = 0; i < vehicles.length; i++) {
       var v = vehicles[i];
       v.behaviors();
@@ -109,10 +115,7 @@ function next() {
     vehicles[i].target.x = words[index % words.length][i].x
     vehicles[i].target.y = words[index % words.length][i].y
   }
-
   if (words[index % words.length].length < words[(index - 1) % words.length].length) {
-    // console.log(words[index % words.length].length);
-    // console.log(words[(index - 1) % words.length].length);
     for (var i = words[index % words.length].length; i < words[(index - 1) % words.length].length; i++) {
       vehicles[i].target.x = random(width)
       vehicles[i].target.y = random(500 + 100, height - 25)
@@ -124,6 +127,7 @@ function redo(x, e) {
   if (e) {
     e.preventDefault();
   }
+  console.log(x);
   textSize = x;
   words = [];
   for (var i = 0; i < strings.length; i++) {

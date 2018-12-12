@@ -129,8 +129,29 @@
                   <input id="sizeInput" onkeyup="runScript(event)" type="text" name="" value=""></input>
                 </div>
               </div>
-              <a class="dropdown-item" onclick="redo(document.getElementById('sizeInput').value - 20, event)" href="#">Smaller</a>
-              <a class="dropdown-item" onclick="redo(document.getElementById('sizeInput').value + 20, event)" href="#">Bigger</a>
+              <div class="animationCheck" style="margin-left:5px;">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="letterOption" value="1" checked>
+                    Letter
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="wordOption" value="2">
+                    Word
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="noneOption" value="3">
+                    None
+                  </label>
+                </div>
+              </div>
+
+              <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) - 20, event)" href="#">Smaller</a>
+              <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) + 20, event)" href="#">Bigger</a>
             </div>
           </div>
           <div class="btn-group">
