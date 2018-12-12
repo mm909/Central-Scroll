@@ -132,17 +132,37 @@ function next() {
   if (words[index % words.length].length < words[(index - 1) % words.length].length) {
     for (var i = words[index % words.length].length; i < words[(index - 1) % words.length].length; i++) {
       let opt = parseInt($('input[name=size]:checked').val());
-      if (opt == 1) {
-        vehicles[i].target.x = random(width / 2, width)
-        vehicles[i].target.y = random(500 + 100, height - 25)
-
-      } else if (!opt) {
-        vehicles[i].target.x = random(width)
-        vehicles[i].target.y = random(500 + 100, height - 25)
-      } else if (opt == 3) {
-        vehicles[i].target.x = lx
-        vehicles[i].target.y = ly
+      switch (opt) {
+        case 0:
+          vehicles[i].target.x = random(width)
+          vehicles[i].target.y = random(500 + 100, height - 25)
+          break;
+        case 1:
+          vehicles[i].target.x = random(width / 2, width)
+          vehicles[i].target.y = random(500 + 100, height - 25)
+          break;
+        case 2:
+          vehicles[i].target.y = random(500 + 100, height - 25)
+          break;
+        case 3:
+          vehicles[i].target.x = lx
+          vehicles[i].target.y = ly
+          break;
+        default:
+          console.log("Error");
       }
+      // if (opt == 0) {
+      //   vehicles[i].target.x = random(width)
+      //   vehicles[i].target.y = random(500 + 100, height - 25)
+      // } else if (opt == 1) {
+      //   vehicles[i].target.x = random(width / 2, width)
+      //   vehicles[i].target.y = random(500 + 100, height - 25)
+      // } else if (opt == 2) {
+      //   vehicles[i].target.y = random(500 + 100, height - 25)
+      // } else if (opt == 3) {
+      //   vehicles[i].target.x = lx
+      //   vehicles[i].target.y = ly
+      // }
     }
   }
 }
