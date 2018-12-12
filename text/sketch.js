@@ -120,19 +120,29 @@ function mousePressed() {
 
 function next() {
   index++;
+  let lx = 0;
+  let ly = 0;
   for (var i = 0; i < words[index % words.length].length; i++) {
     vehicles[i].target.x = words[index % words.length][i].x
     vehicles[i].target.y = words[index % words.length][i].y
+    lx = vehicles[i].target.x
+    ly = vehicles[i].target.y
   }
+
   if (words[index % words.length].length < words[(index - 1) % words.length].length) {
     for (var i = words[index % words.length].length; i < words[(index - 1) % words.length].length; i++) {
       let opt = parseInt($('input[name=size]:checked').val());
       if (opt == 1) {
         vehicles[i].target.x = random(width / 2, width)
+        vehicles[i].target.y = random(500 + 100, height - 25)
+
       } else if (!opt) {
         vehicles[i].target.x = random(width)
+        vehicles[i].target.y = random(500 + 100, height - 25)
+      } else if (opt == 3) {
+        vehicles[i].target.x = lx
+        vehicles[i].target.y = ly
       }
-      vehicles[i].target.y = random(500 + 100, height - 25)
     }
   }
 }
