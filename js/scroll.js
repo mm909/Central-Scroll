@@ -51,7 +51,7 @@ function pageScroll() {
     tempScroll = 1;
     tempDelay = 50;
   }
-  if (scrolling)
+  if (scrolling && doScroll)
     window.scrollBy(0, tempScroll);
   scrolldelay = setTimeout(pageScroll, tempDelay);
 }
