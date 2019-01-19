@@ -1,5 +1,5 @@
 let studentText = ""
-let showingTags = true;
+let showingTags = false;
 readTextFile("students.txt");
 
 studentText = studentText.split('\n')
