@@ -16,7 +16,7 @@ for (var i = 0; i < studentText.length; i++) {
 var students = [];
 for (var i = 0; i < studentText.length; i++) {
   var fontSize = 40;
-  if (studentText[i][2].length > 12) {
+  if (studentText[i][2].length >= 10) {
     fontSize = 35;
   }
   let tempStudent = {

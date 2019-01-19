@@ -4,3 +4,4 @@ Victor, github, victortaksheyev, victor.jpg
 Alex, github, ShadyAlexCodes, alex.jpg
 Jose, github, quijas4101, jose.jpg
 CodeCentral!, github, Code-Central, CodeCentral.png
+NewStudent, github, CodeCodeCode, none.png
