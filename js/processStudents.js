@@ -1,9 +1,11 @@
+let maxStudents = 100;
+let numStudents = 0;
 jQuery(document).ready(function() {
-  processStudents();
+  if (numStudents < maxStudents) processStudents();
 });
 
 function processStudents() {
-
+  numStudents += students.length
   for (var i = 0; i < students.length; i++) {
     let override = "";
     if (students[i].fontSize != 40) {
