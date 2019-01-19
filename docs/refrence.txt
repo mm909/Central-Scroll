@@ -1,0 +1,10 @@
+[_] Landing Page
+  [_] Background
+  [_] Links/Card
+    [_] Central Scroll
+    [_] Text
+    [_] Tags
+    [_] Community Contribution
+  [_] Auto Select
+
+[_]
