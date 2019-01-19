@@ -320,4 +320,8 @@ input[type="file"] {
   font-size: 35px !important
 }
 
+#textContents {
+  height: 100px
+}
+
 /* Eof */
