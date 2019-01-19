@@ -6,6 +6,15 @@ $(document).ready(function() {
   maxScroll = document.body.scrollHeight - window.innerHeight;
   currScroll = $(document).scrollTop();
   pageScroll();
+  window.setInterval(function() {
+    var elem = document.getElementById('followWrapper');
+    elem.scrollTop = elem.scrollTop + 1;
+    if (elem.scrollTop >= elem.scrollHeight - window.innerHeight) {
+      elem.scrollTop = 0
+      students = shuffle(students)
+      processStudents();
+    }
+  }, 75);
 });
 
 function stop() {

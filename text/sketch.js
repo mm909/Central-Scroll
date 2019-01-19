@@ -8,11 +8,7 @@ let sizeChange = 1;
 let nexting = false;
 let strings = [
   'Code',
-  '{Central}',
-  'Student',
-  'Showcase',
-  'Jan 12',
-  '/Switch/'
+  '{Central}'
 ]
 
 $(document).ready(function() {

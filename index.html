@@ -15,16 +15,21 @@
   <script language="javascript" type="text/javascript" src="js/scroll.js"></script>
   <script language="javascript" type="text/javascript" src="js/exampleScroll.js"></script>
   <script language="javascript" type="text/javascript" src="js/prettyprint.js"></script>
+  <script language="javascript" type="text/javascript" src="js/files.js"></script>
   <script language="javascript" type="text/javascript" src="js/defaultCode.js"></script>
   <script language="javascript" type="text/javascript" src="js/file.js"></script>
   <script language="javascript" type="text/javascript" src="js/fade.js"></script>
   <script language="javascript" type="text/javascript" src="js/options.js"></script>
   <script language="javascript" type="text/javascript" src="timer/timer.js"></script>
+  <script language="javascript" type="text/javascript" src="js/students.js"></script>
+  <script language="javascript" type="text/javascript" src="js/processStudents.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/prettyprint.css">
   <link rel="stylesheet" href="css/option.css">
   <link rel="stylesheet" href="css/buttons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script language="javascript" type="text/javascript" src="text/sketch.js"></script>
   <script language="javascript" type="text/javascript" src="text/vehicle.js"></script>
 </head>
@@ -81,7 +86,7 @@
     <!-- <p id="timer"></p> -->
     <!-- <p id="loading">Loading</p> -->
     <!-- <img src="https://via.placeholder.com/150" alt=""> -->
-    <div class="links">
+    <!-- <div class="links">
       <div class="card" style="width: 20rem;">
         <div class="card-body">
           <h5 class="card-title">typed.js</h5>
@@ -110,9 +115,11 @@
           <a href="https://github.com/mm909/snow" class="card-link">Live Code</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <div class="wrapper">
+    <div id="followWrapper" class="followWrapper">
+    </div>
     <a class="class-page-link gitbutton bottomGitLink" href="https://github.com/mm909/" rel="noreferrer noopener">GitHub</a>
     <div class="p5CanvasWrapper">
       <div id="canvasContainer"></div>
@@ -259,9 +266,9 @@
           <div class="form-group col labelRow">
             <label for="inputState">Scroll</label>
           </div>
-          <!-- <div class="form-group col labelRow">
-            <label for="inputState">Scroll</label>
-          </div> -->
+          <div class="form-group col labelRow">
+            <label for="inputState">Tags</label>
+          </div>
         </div>
         <div class="form-row">
           <div class="form-group col">
@@ -273,6 +280,12 @@
           <div class="form-group col">
             <label class="switch">
               <input onchange="stop()" type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="form-group col">
+            <label class="switch">
+              <input onchange="tags()" type="checkbox" checked>
               <span class="slider"></span>
             </label>
           </div>
@@ -314,7 +327,7 @@
             </select>
           </div>
         </div>
-        <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Home</button>
+        <!-- <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Home</button> -->
       </div>
     </div>
   </div>
