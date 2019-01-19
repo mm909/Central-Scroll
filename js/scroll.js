@@ -14,7 +14,7 @@ $(document).ready(function() {
       students = shuffle(students)
       processStudents();
     }
-  }, 75);
+  }, 30);
 });
 
 function stop() {
