@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <title>Central Landing Page</title>
@@ -10,4 +11,356 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body></body>
+=======
+<html>
+
+<head>
+  <script>
+    // document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="js/text.js"></script>
+  <script language="javascript" type="text/javascript" src="js/exampleText.js"></script>
+  <script language="javascript" type="text/javascript" src="js/scroll.js"></script>
+  <script language="javascript" type="text/javascript" src="js/exampleScroll.js"></script>
+  <script language="javascript" type="text/javascript" src="js/prettyprint.js"></script>
+  <script language="javascript" type="text/javascript" src="js/files.js"></script>
+  <script language="javascript" type="text/javascript" src="js/defaultCode.js"></script>
+  <script language="javascript" type="text/javascript" src="js/file.js"></script>
+  <script language="javascript" type="text/javascript" src="js/fade.js"></script>
+  <script language="javascript" type="text/javascript" src="js/options.js"></script>
+  <script language="javascript" type="text/javascript" src="timer/timer.js"></script>
+  <script language="javascript" type="text/javascript" src="js/students.js"></script>
+  <script language="javascript" type="text/javascript" src="js/processStudents.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/prettyprint.css">
+  <link rel="stylesheet" href="css/option.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script language="javascript" type="text/javascript" src="text/sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="text/vehicle.js"></script>
+</head>
+
+<body>
+  <div class="startScreen">
+    <h1 class="title"><span style="color:#fed03d">{<span style="color:#4fc1e9">Central Scroll</span>}</span> </h1>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Custom Code -></span>
+      </div>
+      <textarea id="codeInput" class="form-control" placeholder="Custom code here - (optional)"></textarea>
+    </div>
+    <div class="input-group buttonGroup">
+
+      <button type="button" onclick="clearText()" class="btn btn-danger">Clear</button>
+      <button type="button" onclick="resetText()" class="btn btn-success">Default</button>
+
+      <div class="btn-group">
+        <button id="langButton" type="button" class="noMargin btn btn-info">JS</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" onclick="setTextType('JS')" href="#">JS</a>
+          <a class="dropdown-item" onclick="setTextType('HTML')" href="#">HTML</a>
+          <a class="dropdown-item" onclick="setTextType('CSS')" href="#">CSS</a>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button id="speedButton" type="button" class="noMargin btn btn-warning">Medium</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" onclick="setTextSpeed('Very Slow')" href="#">Very Slow</a>
+          <a class="dropdown-item" onclick="setTextSpeed('Slow')" href="#">Slow</a>
+          <a class="dropdown-item" onclick="setTextSpeed('Medium')" href="#">Medium</a>
+          <a class="dropdown-item" onclick="setTextSpeed('Fast')" href="#">Fast</a>
+          <a class="dropdown-item" onclick="setTextSpeed('Very Fast')" href="#">Very Fast</a>
+        </div>
+      </div>
+
+      <!-- <button type="button" onclick="goText()" class=" btn btn-primary float-right">Go!</button> -->
+      <label id="input-lable" class="btn btn-light fileInput">
+        <input id="input-file" type="file" />
+        Upload File
+      </label>
+      <button type="button" onclick="goText()" class=" btn btn-primary ">Go!</button>
+      <a class="class-page-link gitbutton" href="https://github.com/mm909/" rel="noreferrer noopener">GitHub</a>
+    </div>
+    <!-- <div class="exampleWrapper">
+      <pre id="exampleCodeScroll" class="prettyprint linenums lang-html CodeBoxBuffer"></pre>
+    </div> -->
+    <!-- <p id="timer"></p> -->
+    <!-- <p id="loading">Loading</p> -->
+    <!-- <img src="https://via.placeholder.com/150" alt=""> -->
+    <!-- <div class="links">
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">typed.js</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Side Project</h6>
+          <p class="card-text">Show off what the typed.js lib can do. </p><br> <br>
+          <a href="https://mm909.github.io/typed.js/" class="card-link">Live</a>
+          <a href="https://github.com/mm909/typed.js" class="card-link">Live Code</a>
+          <a href="https://github.com/mattboldt/typed.js/" class="card-link">Library</a>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">lib examples</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Side Project</h6>
+          <p class="card-text">Typed.js, particle.js, and countup.js all working together.</p><br>
+          <a href="https://mm909.github.io/lib-examples/" class="card-link">Live</a>
+          <a href="https://github.com/mm909/lib-examples" class="card-link">Live Code</a>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <div class="card-body">
+          <h5 class="card-title">Snow!</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Side Project</h6>
+          <p class="card-text">A winter example of Typed.js, particle.js, and countup.js all working together.</p>
+          <a href="https://mm909.github.io/snow/" class="card-link">Live</a>
+          <a href="https://github.com/mm909/snow" class="card-link">Live Code</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="wrapper">
+    <div id="followWrapper" class="followWrapper">
+    </div>
+    <a class="class-page-link gitbutton bottomGitLink" href="https://github.com/mm909/" rel="noreferrer noopener">GitHub</a>
+    <div class="p5CanvasWrapper">
+      <div id="canvasContainer"></div>
+    </div>
+    <pre id="codeScroll" class="prettyprint linenums CodeBoxBuffer"></pre>
+    <div id="scrollingButtonGroup">
+      <div class="buttons float-right">
+        <!-- <button id="hideShow" type="button" onclick="hideShow()" class="btn btn-hideShow">Hide</button> -->
+        <button id="options" type="button" onclick="showOptions()" class="btn btn-dark">Options</button>
+        <span id="hideShowButtons">
+          <!-- <div class="btn-group">
+            <button id="text" type="button" onclick="textShow()" class="btn btn-light">Text</button>
+            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu">
+              <div class=""> -->
+          <!-- <div class="input-group">
+                  <input id="sizeInput" onkeyup="runScript(event)" type="text" name="" value=""></input>
+                </div> -->
+          <!-- </div>
+              <hr> -->
+          <!-- <div class="animationCheck" style="margin-left:5px;">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="letterOption" value="1" checked>
+                    Letter
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="wordOption" value="2">
+                    Word
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optionsRadios" id="noneOption" value="3">
+                    None
+                  </label>
+                </div>
+              </div>
+              <hr>
+              <div class="size" style="margin-left:5px;">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="full" value="0">
+                    Full
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="half" value="1" checked>
+                    Half
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="vert" value="2">
+                    vert
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="size" id="hide" value="3">
+                    hide
+                  </label>
+                </div>
+              </div> -->
+          <!-- <hr> -->
+          <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) - 20, event)" href="#">Smaller</a> -->
+          <!-- <a class="dropdown-item" onclick="redo(parseInt(document.getElementById('sizeInput').value) + 20, event)" href="#">Bigger</a> -->
+          <!-- Text Editor (Soon?) -->
+          <!-- </div>
+          </div> -->
+          <!-- <div class="btn-group">
+            <button id="langButton2" type="button" class="noMargin btn btn-info">JS</button>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick="setTextType('JS',true)" href="#">JS</a>
+              <a class="dropdown-item" onclick="setTextType('HTML',true)" href="#">HTML</a>
+              <a class="dropdown-item" onclick="setTextType('CSS',true)" href="#">CSS</a>
+            </div>
+          </div> -->
+          <!-- <div class="btn-group">
+            <button id="speedButton2" type="button" class="noMargin btn btn-warning">Medium</button>
+            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick="setTextSpeed('Very Slow')" href="#">Very Slow</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Slow')" href="#">Slow</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Medium')" href="#">Medium</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Fast')" href="#">Fast</a>
+              <a class="dropdown-item" onclick="setTextSpeed('Very Fast')" href="#">Very Fast</a>
+            </div>
+          </div> -->
+          <!-- <button id="stopButton" type="button" onclick="stop()" class="btn btn-danger ">Stop</button> -->
+      </div>
+
+      </span>
+
+    </div>
+    <!-- <div id="pictureHolder">
+        <div id="carouselPicture" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block " src="https://via.placeholder.com/150" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block " src="https://via.placeholder.com/100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block " src="https://via.placeholder.com/150" alt="Third slide">
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <div class="optionShadowBox">
+      <div class="optionsBox">
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="inputState">Language</label>
+            <select onchange="setTextType($('#langSelect').val(), true)" id="langSelect" class="form-control">
+              <option selected>JS</option>
+              <option>HTML</option>
+              <option>CSS</option>
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="inputState">Speed</label>
+            <select onchange="setTextSpeed($('#speedSelect').val())" id="speedSelect" class="form-control">
+              <option>Very Slow</option>
+              <option>Slow</option>
+              <option selected>Medium</option>
+              <option>Fast</option>
+              <option>Very Fast</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row ">
+          <div class="form-group col labelRow">
+            <label for="inputState">Text</label>
+          </div>
+          <div class="form-group col labelRow">
+            <label for="inputState">Scroll</label>
+          </div>
+          <div class="form-group col labelRow">
+            <label for="inputState">Tags</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label class="switch">
+              <input onchange="textShow()" type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="form-group col">
+            <label class="switch">
+              <input onchange="stop()" type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="form-group col">
+            <label class="switch">
+              <input onchange="tags()" type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <!-- <div class="form-group col">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div> -->
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Text Size</label>
+              <input id="sizeInput" class="form-control" onkeyup="runScript(event)" type="text" name="" value="">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Move Speed</label>
+              <input id="MoveSpeed" class="form-control" onkeyup="setMoveSpeed(event)" placeholder="Place Holding">
+            </div>
+          </div>
+        </form>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="inputState">Animation</label>
+            <select onchange="setAnimation($('#animationSelect').val())" id="animationSelect" class="form-control">
+              <option selected>Letter</option>
+              <option>Word</option>
+              <option>None</option>
+            </select>
+          </div>
+          <div class="form-group col">
+            <label for="inputState">Dot placement</label>
+            <select onchange="setDot($('#dotSelect').val())" id="dotSelect" class="form-control">
+              <option>Full</option>
+              <option selected>Half</option>
+              <option>Vertical</option>
+              <option>Hide</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Text Contents</span>
+              </div>
+              <textarea id="textContents" class="form-control">
+Code
+{Central}</textarea>
+              <div class="input-group-append">
+                <button type="button" onclick="updateStrings()" name="button">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button id="backButton" type="button" onclick="backText()" class="btn btn-primary ">Home</button> -->
+      </div>
+    </div>
+  </div>
+
+</body>
+
+>>>>>>> master
 </html>
