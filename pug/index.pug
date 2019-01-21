@@ -6,9 +6,29 @@ html(lang='en')
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js')
-    script(src='http://www.jsdelivr.com/#!particles.js')
-    
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    script(src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js')
+    script(src='js/particles/landing/app.js')
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="css/index.css")
-  body
-    
+  body.indexBody
+    div#landingParticles
+    nav.navbar.navbar-dark.bg-dark
+      img(src='assets/images/logo/logo.png')
+    .container.card-container
+      .card-columns.card-options
+        .card
+          .card-body
+            h5.card-title Card title that wraps to a new line
+            p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            a(href='pages/text.html').btn.btn-primary Go somewhere
+        .card
+          .card-body
+            h5.card-title Card title that wraps to a new line
+            p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            a(href='#').btn.btn-primary Go somewhere
+        .card
+          .card-body
+            h5.card-title Card title that wraps to a new line
+            p.card-texT This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            a(href='#').btn.btn-primary Go somewhere

@@ -6,8 +6,6 @@ function Vehicle(x, y) {
   this.r = 8;
   this.maxspeed = 35;
   this.maxforce = 5;
-  // this.h = random(50, 70);
-  // this.h = random(255);
   this.start = 0.0;
 }
 

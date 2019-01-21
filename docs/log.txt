@@ -1,5 +1,11 @@
 // Mikian: Start         - 1/18/2019 8:30pm
 // Mikian: Goal          - Setup file structure, doc overall goals/idea
 // Mikian: Comment       -
-// Mikian: GitHub Commit - 
+// Mikian: GitHub Commit -
+// Mikian: End           -
+
+// Mikian: Start         - 1/18/2019 5:30pm
+// Mikian: Goal          - 
+// Mikian: Comment       -
+// Mikian: GitHub Commit -
 // Mikian: End           -

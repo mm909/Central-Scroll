@@ -110,14 +110,14 @@ function textShow() {
 }
 
 function preload() {
-  font = loadFont('text/AvenirNextLTPro-Demi.otf');
+  font = loadFont('../js/text/AvenirNextLTPro-Demi.otf');
 }
 let dotOpt = 2;
 
 function setup() {
   swapingCirclesInt = setInterval(next, 5000);
   var canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent("canvasContainer")
+  // canvas.parent("canvasContainer")
 
   for (var i = 0; i < strings.length; i++) {
     words.push(font.textToPoints(strings[i], (windowWidth / 2) + 10, 500, textSize, {

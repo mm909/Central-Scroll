@@ -1,3 +1,5 @@
-particlesJS.load('particles-js', 'particles/snow.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+$(document).ready(function() {
+  particlesJS.load('landingParticles', 'js/particles/landing/landing.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+})

@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 120
+      "value": 150
     },
     "color": {
       "value": "#fcfcff"
@@ -10,20 +10,20 @@
       "type": "circle"
     },
     "size": {
-      "value": 10,
+      "value": 0,
       "random": true
     },
     "line_linked": {
-      "enable": false,
-      "distance": 300,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 2
+      "enable": true,
+      "distance": 50,
+      "color": "#0066cc",
+      "opacity": 1,
+      "width": 3
     },
     "move": {
       "enable": true,
-      "speed": 4,
-      "direction": "bottom",
+      "speed": 3,
+      "direction": "none",
       "straight": false,
       "out_mode": "out"
     }

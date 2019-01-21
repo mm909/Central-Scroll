@@ -1,5 +1,5 @@
 [_] Landing Page
-  [_] Background
+  [✅] Background
   [_] Links/Card
     [_] Central Scroll
     [_] Text
