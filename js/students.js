@@ -3,7 +3,6 @@ let showingTags = false;
 readTextFile("students.txt");
 
 studentText = studentText.split('\n')
-studentText.splice(studentText.length - 1, 1)
 for (var i = 0; i < studentText.length; i++) {
   studentText[i] = studentText[i].split(',')
 }
@@ -15,21 +14,23 @@ for (var i = 0; i < studentText.length; i++) {
 
 var students = [];
 for (var i = 0; i < studentText.length; i++) {
-  var fontSize = 40;
-  if (studentText[i][2].length >= 10) {
-    fontSize = 35;
+  if (studentText[i][0] != "") {
+    var fontSize = 40;
+    if (studentText[i][2].length >= 10) {
+      fontSize = 35;
+    }
+    let tempStudent = {
+      name: studentText[i][0],
+      accountType: studentText[i][1],
+      tag: studentText[i][2],
+      image: studentText[i][3],
+      fontSize: fontSize
+    }
+    students.push(tempStudent)
   }
-  let tempStudent = {
-    name: studentText[i][0],
-    accountType: studentText[i][1],
-    tag: studentText[i][2],
-    image: studentText[i][3],
-    fontSize: fontSize
-  }
-  students.push(tempStudent)
 }
 
-function shuffle(array) {
+function shuffleStudents(array) {
   var currentIndex = array.length,
     temporaryValue, randomIndex;
 
@@ -49,7 +50,7 @@ function shuffle(array) {
   return array;
 }
 
-students = shuffle(students)
+students = shuffleStudents(students)
 
 function tags() {
   showingTags ? $(".followWrapper").css("display", "none") : $(".followWrapper").css("display", "block")

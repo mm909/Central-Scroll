@@ -7,6 +7,7 @@ jQuery(document).ready(function() {
 function processStudents() {
   numStudents += students.length
   for (var i = 0; i < students.length; i++) {
+    // console.log(students[i].name);
     let override = "";
     if (students[i].fontSize != 40) {
       override += "smallUsername "

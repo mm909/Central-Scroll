@@ -11,7 +11,7 @@ let strings = []
 $(document).ready(function() {
   let t = document.getElementById("textContents").value
   t = t.split('\n')
-  console.log(t);
+  // console.log(t);
   strings = t
   for (var i = 0; i < strings.length; i++) {
     if (strings[i] == "") strings.splice(i, 1)
@@ -28,7 +28,7 @@ function updateStrings() {
   for (var i = 0; i < strings.length; i++) {
     if (strings[i] == "") strings.splice(i, 1)
   }
-  console.log(t);
+  // console.log(t);
 
   words = [];
   for (var i = 0; i < strings.length; i++) {
