@@ -1,4 +1,4 @@
-//- pug index.pug --pretty --watch --out ../
+//- pug text.pug --pretty --watch --out ../../pages/
 doctype html
 html(lang='en')
   head
@@ -12,6 +12,7 @@ html(lang='en')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js')
     //- script(src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js')
     //- script(src='js/particles/landing/app.js')
+    script(src='/js/options/options.js')
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
     //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="../css/index.css")
@@ -19,3 +20,6 @@ html(lang='en')
     div#landingParticles
     nav.navbar.navbar-dark.bg-dark
       img(src='../assets/images/logo/logo.png')
+      button(id="options" type="button" onclick="toggleOptions()").btn.btn-dark Options
+    div.optionShadowBox
+      
