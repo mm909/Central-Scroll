@@ -22,4 +22,24 @@ html(lang='en')
       img(src='../assets/images/logo/logo.png')
       button(id="options" type="button" onclick="toggleOptions()").btn.btn-dark Options
     div.optionShadowBox
-      
+      .optionsBox
+        .form-row
+          .form-group.col.labelRow
+            label(for='inputState') Text
+          .form-group.col.labelRow
+            label(for='inputState') Scroll
+          .form-group.col.labelRow
+            label(for='inputState') Tags
+        .form-row
+          .form-group.col
+            label.switch
+              input(onchange='textShow()', type='checkbox')
+              span.slider
+          .form-group.col
+            label.switch
+              input(onchange='textShow()', type='checkbox')
+              span.slider
+          .form-group.col
+            label.switch
+              input(onchange='textShow()', type='checkbox')
+              span.slider
