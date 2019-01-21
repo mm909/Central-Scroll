@@ -7,3 +7,4 @@ CodeCentral!, github, Code-Central, CodeCentral.png
 NewStudent, github, CodeCodeCode, none.png
 Justin, github, justinhschaaf, justinhschaaf.png
 Cali, github, calijava1101, cali.png
+Max, github, MernGG, max.jpg
