@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,iBAAiB;EACf,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC",
+"sources": ["../../../sass/components/particles/landing.sass"],
+"names": [],
+"file": "landing.css"
+}

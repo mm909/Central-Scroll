@@ -8,6 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="/js/options/options.js"></script>
+    <script src="/js/text/text.js"></script>
+    <script src="/js/text/vehicle.js"></script>
+    <script src="/js/text/sketch.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
   </head>
@@ -18,32 +21,20 @@
     </nav>
     <div class="optionShadowBox">
       <div class="optionsBox">
+        <div class="form-row"></div>
         <div class="form-row">
-          <div class="form-group col labelRow">
-            <label for="inputState">Text</label>
-          </div>
-          <div class="form-group col labelRow">
-            <label for="inputState">Scroll</label>
-          </div>
-          <div class="form-group col labelRow">
-            <label for="inputState">Tags</label>
+          <div class="form-group col">
+            <div class="form-row"></div>
           </div>
         </div>
         <div class="form-row">
-          <div class="form-group col">
-            <label class="switch">
-              <input onchange="textShow()" type="checkbox"><span class="slider"></span>
-            </label>
-          </div>
-          <div class="form-group col">
-            <label class="switch">
-              <input onchange="textShow()" type="checkbox"><span class="slider"></span>
-            </label>
-          </div>
-          <div class="form-group col">
-            <label class="switch">
-              <input onchange="textShow()" type="checkbox"><span class="slider"></span>
-            </label>
+          <div class="input-group">
+            <div class="input-group-prepend"><span class="input-group-text">Text              </span></div>
+            <textarea class="form-control" id="textContents">Code
+{Central}</textarea>
+            <div class="input-group-append">
+              <button type="button" onclick="updateStrings()" name="button">Update</button>
+            </div>
           </div>
         </div>
       </div>

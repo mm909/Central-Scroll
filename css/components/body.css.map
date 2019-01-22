@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,IAAI;EACF,MAAM,EAAE,IAAI;;;;AAEd,UAAU;EACR,QAAQ,EAAE,MAAM;EAEd,gBAAK,EAAE,IAAI;;;;AAEf,SAAS;EACP,QAAQ,EAAE,MAAM;EAEd,gBAAK,EAAE,OAAO",
+"sources": ["../../sass/components/body.sass"],
+"names": [],
+"file": "body.css"
+}

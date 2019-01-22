@@ -13,6 +13,9 @@ html(lang='en')
     //- script(src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js')
     //- script(src='js/particles/landing/app.js')
     script(src='/js/options/options.js')
+    script(src='/js/text/text.js')
+    script(src='/js/text/vehicle.js')
+    script(src='/js/text/sketch.js')
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
     //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel="stylesheet" href="../css/index.css")
@@ -24,22 +27,20 @@ html(lang='en')
     div.optionShadowBox
       .optionsBox
         .form-row
-          .form-group.col.labelRow
-            label(for='inputState') Text
-          .form-group.col.labelRow
-            label(for='inputState') Scroll
-          .form-group.col.labelRow
-            label(for='inputState') Tags
+          //- .form-group.col.labelRow
+          //-   label(for='inputState') Text
         .form-row
           .form-group.col
-            label.switch
-              input(onchange='textShow()', type='checkbox')
-              span.slider
-          .form-group.col
-            label.switch
-              input(onchange='textShow()', type='checkbox')
-              span.slider
-          .form-group.col
-            label.switch
-              input(onchange='textShow()', type='checkbox')
-              span.slider
+            //- label.switch
+            //-   input(onchange='textShow()', type='checkbox')
+            //-   span.slider
+            .form-row
+        .form-row
+          .input-group
+            .input-group-prepend
+              span.input-group-text Text              
+            textarea#textContents.form-control
+              | Code
+              | {Central}
+            .input-group-append
+              button(type='button', onclick='updateStrings()', name='button') Update
