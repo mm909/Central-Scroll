@@ -1,8 +1,13 @@
-Mikian, github, mm909, mikian.jpg
-Mikian, instagram, mikian_, mikian.jpg
-Victor, github, victortaksheyev, victor.jpg
-Alex, github, ShadyAlexCodes, alex.jpg
-Jose, github, quijas4101, jose.jpg
-CodeCentral!, github, Code-Central, CodeCentral.png
-NewStudent, github, CodeCodeCode, none.png
-Justin, github, justinhschaaf, justinhschaaf.png
+Mikian, github, mm909, mikian.jpg, Instructors
+Mikian, instagram, mikian_, mikian.jpg, Instructors
+Victor, github, victortaksheyev, victor.jpg, Instructors
+Alex, github, ShadyAlexCodes, alex.jpg, Instructors
+Jose, github, quijas4101, jose.jpg, Instructors
+CodeCentral!, github, Code-Central, CodeCentral.png, Instructors
+Justin, github, justinhschaaf, justinhschaaf.png, Students
+Cali, github, calijava1101, cali.png, Instructors
+Max, github, MernGG, max.jpg, Students
+Sam, github, Willowvayle, SamCornelius.jpg, Instructors
+Matthias, github, Matthiasclee, MatthiasL.jpg, Students
+Samuel, github, animalsandsuch, idot1.jpg, Students
+Felix, youtube, PewDiePie, pew.jpg, Students

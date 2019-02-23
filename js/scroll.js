@@ -11,7 +11,7 @@ $(document).ready(function() {
     elem.scrollTop = elem.scrollTop + 1;
     if (elem.scrollTop >= elem.scrollHeight - window.innerHeight) {
       elem.scrollTop = 0
-      students = shuffle(students)
+      students = shuffleStudents(students)
       if (numStudents < maxStudents) processStudents();
     }
   }, 30);

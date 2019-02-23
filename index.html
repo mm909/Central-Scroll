@@ -296,6 +296,16 @@
             </label>
           </div> -->
         </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="inputState">Tag Fliter</label>
+            <select onchange="filterStudents($('#tagFliter').val())" id="tagFliter" class="form-control">
+              <option selected>All</option>
+              <option>Students</option>
+              <option>Instructors</option>
+            </select>
+          </div>
+        </div>
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
