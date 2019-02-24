@@ -4,7 +4,7 @@ Victor, github, victortaksheyev, victor.jpg, Instructors
 Alex, github, ShadyAlexCodes, alex.jpg, Instructors
 Jose, github, quijas4101, jose.jpg, Instructors
 CodeCentral!, github, Code-Central, CodeCentral.png, Instructors
-Justin, github, justinhschaaf, justinhschaaf.png, Students
+Justin, github, justinhschaaf, https://content.justinschaaf.com/common/logos/js-hexagon.svg, Students
 Cali, github, calijava1101, cali.png, Instructors
 Max, github, MernGG, max.jpg, Students
 Sam, github, Willowvayle, SamCornelius.jpg, Instructors
