@@ -13,7 +13,7 @@ function processStudents() {
       override += "smallUsername "
     }
     let srcImage = "";
-    if (students[i].image.toLowerCase().indexOf("http") >= 0) {
+    if (students[i].image.toLowerCase().indexOf("http://") >= 0 || students[i].image.toLowerCase().indexOf("https://") >= 0) {
       srcImage = students[i].image;
     } else {
       srcImage = "images/" + students[i].image;
